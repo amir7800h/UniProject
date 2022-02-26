@@ -7,11 +7,17 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Users;
 using Domain.Attributes;
+using Domain.Catalogs;
+using Persistence.EntityConfigurations;
+using Persistence.Seeds;
 
 namespace Persistence.Contexts
 {
     public class DataBaseContext:DbContext,IDataBaseContext
     {
+        public DbSet<CatalogType> CatalogTypes { get; set; }
+        public DbSet<CatalogBrand> CatalogBrands { get; set; }
+
         public DataBaseContext(DbContextOptions<DataBaseContext> option):base(option)
         {
         }
@@ -25,9 +31,15 @@ namespace Persistence.Contexts
                     builder.Entity(entityType.Name).Property<DateTime?>("InsertTime");
                     builder.Entity(entityType.Name).Property<DateTime?>("UpdateTime");
                     builder.Entity(entityType.Name).Property<DateTime?>("RemoveTime");
-                    builder.Entity(entityType.Name).Property<bool>("IsRemoved");
+                    builder.Entity(entityType.Name).Property<bool>("IsRemoved").HasDefaultValue(false);
                 }
             }
+
+            builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
+            builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
+
+            DataBaseContextSeed.CatalogSeed(builder);
+
             base.OnModelCreating(builder);
         }
 
@@ -59,6 +71,7 @@ namespace Persistence.Contexts
                 {
                     item.Property("RemoveTime").CurrentValue = DateTime.Now;
                     item.Property("IsRemoved").CurrentValue = true;
+                    item.State = EntityState.Modified;
                 }
             }
             return base.SaveChanges();

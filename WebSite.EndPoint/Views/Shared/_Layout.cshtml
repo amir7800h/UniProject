@@ -216,7 +216,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="dropdown--btn-primary">وارد شوید</a>
+                                    <a asp-action="login" asp-controller="account" class="dropdown--btn-primary">وارد شوید</a>
                                 </li>
                                 <li>
                                     <span>کاربر جدید هستید؟</span>
@@ -1342,6 +1342,9 @@
     <script src="~/Theme/assets/js/theme.js"></script>
     <!-- Here goes your custom.js -->
     <script src="~/Theme/assets/js/custom.js"></script>
+
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/SignalROnlineVisitorService.js"></script>    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

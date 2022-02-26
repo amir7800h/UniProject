@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using Persistence.Contexts;
 using System.Diagnostics;
 using WebSite.EndPoint.Models;
+using WebSite.EndPoint.Models.Utility.Filters;
 
 namespace WebSite.EndPoint.Controllers
 {
+    [ServiceFilter(typeof(SaveVisitorFilter))]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

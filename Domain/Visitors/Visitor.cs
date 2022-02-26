@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +10,9 @@ namespace Domain.Visitors
 {
     public class Visitor
     {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
         public string Ip { get; set; }
         public string CurrentLink { get; set; }
         public string ReferrerLink { get; set; }
@@ -17,5 +22,8 @@ namespace Domain.Visitors
         public VisitorVersion Browser { get; set; }
         public VisitorVersion OperationSystem { get; set; }
         public Device Device { get; set; }
+        [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
+        public DateTime Time { get; set; }
+        public string VisitorId { get; set; }
     }
 }

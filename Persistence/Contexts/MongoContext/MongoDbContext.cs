@@ -13,9 +13,10 @@ namespace Persistence.Contexts.MongoContext
     {
         private readonly IMongoDatabase db;
         private readonly IMongoCollection<T> mongoCollection;
-
+        public IConfiguration Configuration { get; }
         public MongoDbContext(IConfiguration configuration)
         {
+            
             var client = new MongoClient();
             db = client.GetDatabase(configuration["MongoDb:VisitorDataBaseName"]);
             mongoCollection = db.GetCollection<T>(typeof(T).Name);

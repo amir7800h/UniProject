@@ -17,3 +17,5 @@ C:\Users\Lenovo\Desktop\Train\UniProject\Infrastructure\bin\Debug\net6.0\Persist
 C:\Users\Lenovo\Desktop\Train\UniProject\Infrastructure\bin\Debug\net6.0\Application.pdb
 C:\Users\Lenovo\Desktop\Train\UniProject\Infrastructure\bin\Debug\net6.0\Domain.pdb
 C:\Users\Lenovo\Desktop\Train\UniProject\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Train\UniProject\Infrastructure\bin\Debug\net6.0\Common.dll
+C:\Users\Lenovo\Desktop\Train\UniProject\Infrastructure\bin\Debug\net6.0\Common.pdb

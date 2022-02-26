@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7wVRdFaqT6I07B7o6rvqK8cYaNO1DTF7vRp9/9FWwvQdAXMuQywAmaIH3fxxb6kAg+ZrX9beT4WHBBoooMdlVA==",
+  "dgSpecHash": "0Oz3sK9qNEICPlXIJcb4erfsR7ZYW2FjaJkyBHAi99510AizlMvFQQPS57Ti5DNuwWln4OyomGjq/7BrQdgYYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\mongodb.bson\\2.14.1\\mongodb.bson.2.14.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],

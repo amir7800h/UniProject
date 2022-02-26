@@ -17,3 +17,5 @@ C:\Users\Lenovo\Desktop\Train\UniProject\Persistence\obj\Debug\net6.0\refint\Per
 C:\Users\Lenovo\Desktop\Train\UniProject\Persistence\obj\Debug\net6.0\Persistence.pdb
 C:\Users\Lenovo\Desktop\Train\UniProject\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\Train\UniProject\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+C:\Users\Lenovo\Desktop\Train\UniProject\Persistence\bin\Debug\net6.0\Common.dll
+C:\Users\Lenovo\Desktop\Train\UniProject\Persistence\bin\Debug\net6.0\Common.pdb
