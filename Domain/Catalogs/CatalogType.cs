@@ -17,17 +17,4 @@ namespace Domain.Catalogs
         public ICollection<CatalogType> SubType { get; set; }
 
     }
-
-    [Auditable]
-    public class CatalogItem
-    {
-
-    }
-
-    [Auditable]
-    public class CatalogBrand
-    {
-        public int Id { get; set; }
-        public string Brand { get; set; }
-    }
 }

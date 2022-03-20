@@ -1,8 +1,10 @@
+using Application.Catalogs.GetMenuItem;
 using Application.Contexts.Interfaces;
 using Application.Interfaces.Contexts;
 using Application.Visitors.SaveVisitorInfo;
 using Application.Visitors.VisitorOnline;
 using Infrastructure.IdentityConfigs;
+using Infrastructure.MappingProfile;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Persistence.Contexts;
@@ -36,7 +38,12 @@ builder.Services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>()
 builder.Services.AddScoped<SaveVisitorFilter>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IVisitorOnlineService, VisitorOnlineService>();
+builder.Services.AddTransient<IGetMenuItemService, GetMenuItemService>();   
 builder.Services.AddSignalR();
+
+//mapper
+builder.Services.AddAutoMapper(typeof(CatalogMappingProfile));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

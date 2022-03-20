@@ -1,8 +1,11 @@
 using Admin.EndPoint.MappingProfile;
+using Application.Catalogs.CatalogItems.AddNewCatalogItem;
+using Application.Catalogs.CatalogItems.CatalogItemService;
 using Application.Catalogs.CatalogTypes.CrudService;
 using Application.Contexts.Interfaces;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetVisitorReports;
+using FluentValidation;
 using Infrastructure.MappingProfile;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Contexts;
@@ -23,8 +26,9 @@ builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 #endregion
 
 builder.Services.AddTransient<ICatalogTypeService, CatalogTypeService>();
-
-
+builder.Services.AddTransient<ICatalogItemService, CatalogItemService>();
+builder.Services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
+builder.Services.AddTransient<IValidator<AddNewCatalogItemDto>, AddNewCatalogItemDtoValidator>();
 //mapper
 builder.Services.AddAutoMapper(typeof(CatalogMappingProfile));
 builder.Services.AddAutoMapper(typeof(CatalogVMMappingProfile));

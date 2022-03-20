@@ -17,6 +17,10 @@ namespace Persistence.Contexts
     {
         public DbSet<CatalogType> CatalogTypes { get; set; }
         public DbSet<CatalogBrand> CatalogBrands { get; set; }
+        public DbSet<CatalogItem> CatalogItems { get; set; }
+        public DbSet<CatalogItemFeature> CatalogItemFeatures { get; set; }
+        public DbSet<CatalogItemImage> CatalogItemImages { get; set; }
+
 
         public DataBaseContext(DbContextOptions<DataBaseContext> option):base(option)
         {
