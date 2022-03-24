@@ -6,6 +6,7 @@ using Application.Contexts.Interfaces;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetVisitorReports;
 using FluentValidation;
+using Infrastructure.ExternalApi;
 using Infrastructure.MappingProfile;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Contexts;
@@ -24,6 +25,8 @@ string connectionString = builder.Configuration["ConnectionString:SqlServer"];
 builder.Services.AddDbContext<DataBaseContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 #endregion
+
+builder.Services.AddTransient<IImageUploadService, ImageUploadService>();
 
 builder.Services.AddTransient<ICatalogTypeService, CatalogTypeService>();
 builder.Services.AddTransient<ICatalogItemService, CatalogItemService>();

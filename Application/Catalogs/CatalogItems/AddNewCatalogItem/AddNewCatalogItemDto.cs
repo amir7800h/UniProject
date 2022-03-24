@@ -26,6 +26,9 @@ namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
             RuleFor(x => x.Description).NotNull().WithMessage("توضیحات نمی تواند خالی باشد");
             RuleFor(x => x.Price).NotNull();
             RuleFor(x => x.AvailableStock).InclusiveBetween(0, int.MaxValue);
+            RuleFor(x => x.Images).Null();
+            RuleFor(x => x.Description).Null();
+            
         }
     }
 }

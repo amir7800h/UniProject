@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mR8HuVaKMbHQrCLzL/5DnWqD/govhl2D9Xp5th5D9jw=",
+  "Hash": "zTeTlIRKeTCpvNK4UPN8czbjJBq/x1Cip4wUUZqBuDY=",
   "Source": "Admin.EndPoint",
   "BasePath": "_content/Admin.EndPoint",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\wwwroot\\Sweetalert2\\sweetalert2.min.css",
+      "SourceId": "Admin.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\wwwroot\\",
+      "BasePath": "_content/Admin.EndPoint",
+      "RelativePath": "Sweetalert2/sweetalert2.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\wwwroot\\Sweetalert2\\sweetalert2.min.js",
+      "SourceId": "Admin.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\wwwroot\\",
+      "BasePath": "_content/Admin.EndPoint",
+      "RelativePath": "Sweetalert2/sweetalert2.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Sweetalert2\\sweetalert2.min.js"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\wwwroot\\Theme\\apps_calendar.html",

@@ -1,6 +1,7 @@
 using Application.Catalogs.CatalogItems.AddNewCatalogItem;
 using Application.Catalogs.CatalogItems.CatalogItemService;
 using Application.Dtos;
+using Infrastructure.ExternalApi;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,14 +12,15 @@ namespace Admin.EndPoint.Pages.CatalogItems
     {
         private readonly IAddNewCatalogItemService addNewCatalogItemService;
         private readonly ICatalogItemService catalogItemService;
+        private readonly IImageUploadService imageUpload;
 
         public CreateModel(IAddNewCatalogItemService addNewCatalogItemService
-            , ICatalogItemService catalogItemService
+            , ICatalogItemService catalogItemService, IImageUploadService imageUpload
              )
         {
             this.addNewCatalogItemService = addNewCatalogItemService;
             this.catalogItemService = catalogItemService;
-
+            this.imageUpload = imageUpload;
         }
 
         public SelectList Categories { get; set; }
@@ -37,12 +39,12 @@ namespace Admin.EndPoint.Pages.CatalogItems
 
         public JsonResult OnPost()
         {
-            if (!ModelState.IsValid)
-            {
-                var allErrors = ModelState.Values.SelectMany(v => v.Errors);
-                return new JsonResult(new BaseDto<int>
-                    (false, allErrors.Select(p => p.ErrorMessage).ToList(), 0));
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    var allErrors = ModelState.Values.SelectMany(v => v.Errors);
+            //    return new JsonResult(new BaseDto<int>
+            //        (false, allErrors.Select(p => p.ErrorMessage).ToList(), 0));
+            //}
 
             for (int i = 0; i < Request.Form.Files.Count(); i++)
             {
@@ -53,8 +55,16 @@ namespace Admin.EndPoint.Pages.CatalogItems
 
             if (Files.Count > 0)
             {
+                var result = imageUpload.Upload(Files);
+                foreach(var item in result)
+                {
+                    images.Add(new AddNewCatalogItemImage_Dto { Src = item });
+                }
                 
             }
+            Data.Images = images;
+            var resultService = addNewCatalogItemService.Execute(Data);
+            return new JsonResult(resultService);
         }
     }
 }

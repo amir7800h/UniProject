@@ -300,3 +300,4 @@ C:\Users\Lenovo\Desktop\Train\UniProject\WebSite.EndPoint\obj\Debug\net6.0\WebSi
 C:\Users\Lenovo\Desktop\Train\UniProject\WebSite.EndPoint\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Lenovo\Desktop\Train\UniProject\WebSite.EndPoint\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Lenovo\Desktop\Train\UniProject\WebSite.EndPoint\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Lenovo\Desktop\Train\UniProject\WebSite.EndPoint\bin\Debug\net6.0\RestSharp.dll

@@ -95,3 +95,4 @@ C:\Users\Lenovo\Desktop\Train\UniProject\Admin.EndPoint\obj\Debug\net6.0\Admin.E
 C:\Users\Lenovo\Desktop\Train\UniProject\Admin.EndPoint\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Lenovo\Desktop\Train\UniProject\Admin.EndPoint\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Lenovo\Desktop\Train\UniProject\Admin.EndPoint\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Lenovo\Desktop\Train\UniProject\Admin.EndPoint\bin\Debug\net6.0\RestSharp.dll

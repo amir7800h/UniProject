@@ -875,6 +875,15 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "RestSharp/107.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {}
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -2486,6 +2495,24 @@
         "packageIcon.png"
       ]
     },
+    "RestSharp/107.3.0": {
+      "sha512": "qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "type": "package",
+      "path": "restsharp/107.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.107.3.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
     "SharpCompress/0.30.1": {
       "sha512": "XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "type": "package",
@@ -3117,7 +3144,8 @@
       "Microsoft.EntityFrameworkCore >= 6.0.2",
       "Microsoft.Extensions.Configuration.Abstractions >= 6.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
-      "Persistence >= 1.0.0"
+      "Persistence >= 1.0.0",
+      "RestSharp >= 107.3.0"
     ]
   },
   "packageFolders": {
@@ -3178,6 +3206,10 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
             "version": "[6.0.0, )"
+          },
+          "RestSharp": {
+            "target": "Package",
+            "version": "[107.3.0, )"
           }
         },
         "imports": [
@@ -3195,7 +3227,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
