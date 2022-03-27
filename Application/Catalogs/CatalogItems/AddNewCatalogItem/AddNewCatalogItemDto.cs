@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using System.Collections.Generic;
 
 namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
 {

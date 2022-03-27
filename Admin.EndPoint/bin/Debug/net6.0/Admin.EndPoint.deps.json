@@ -10,7 +10,6 @@
         "dependencies": {
           "Application": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "FluentValidation.AspNetCore": "10.4.0",
           "Infrastructure": "1.0.0",
           "Persistence": "1.0.0"
         },

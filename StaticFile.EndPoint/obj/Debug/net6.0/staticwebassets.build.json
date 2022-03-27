@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8CvVSL3YkbK6v2cA1NAp8NeV+Fly417VGWyGw0oy6mM=",
+  "Hash": "8I9ygB2pFwJB9e0GYPeVjfyRCeZ1uUFSxoJAGivoZqA=",
   "Source": "StaticFile.EndPoint",
   "BasePath": "_content/StaticFile.EndPoint",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1108.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-3/eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG"
     }
   ]
 }

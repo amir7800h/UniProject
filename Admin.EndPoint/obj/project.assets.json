@@ -3192,7 +3192,6 @@
     "net6.0": [
       "Application >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "FluentValidation.AspNetCore >= 10.4.0",
       "Infrastructure >= 1.0.0",
       "Persistence >= 1.0.0"
     ]
@@ -3249,10 +3248,6 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[11.0.0, )"
-          },
-          "FluentValidation.AspNetCore": {
-            "target": "Package",
-            "version": "[10.4.0, )"
           }
         },
         "imports": [

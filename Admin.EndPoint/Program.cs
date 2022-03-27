@@ -6,6 +6,7 @@ using Application.Contexts.Interfaces;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetVisitorReports;
 using FluentValidation;
+using FluentValidation.AspNetCore;
 using Infrastructure.ExternalApi;
 using Infrastructure.MappingProfile;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,8 @@ using Persistence.Contexts.MongoContext;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages().AddFluentValidation();
+
 builder.Services.AddScoped<IGetVisitorReportService, GetVisitorReportService>();
 builder.Services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 
@@ -31,10 +33,14 @@ builder.Services.AddTransient<IImageUploadService, ImageUploadService>();
 builder.Services.AddTransient<ICatalogTypeService, CatalogTypeService>();
 builder.Services.AddTransient<ICatalogItemService, CatalogItemService>();
 builder.Services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
-builder.Services.AddTransient<IValidator<AddNewCatalogItemDto>, AddNewCatalogItemDtoValidator>();
+
 //mapper
 builder.Services.AddAutoMapper(typeof(CatalogMappingProfile));
 builder.Services.AddAutoMapper(typeof(CatalogVMMappingProfile));
+
+
+
+builder.Services.AddTransient<IValidator<AddNewCatalogItemDto>, AddNewCatalogItemDtoValidator>().AddFluentValidation();
 
 var app = builder.Build();
 

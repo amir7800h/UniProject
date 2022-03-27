@@ -41,6 +41,7 @@ namespace Persistence.Contexts
 
             builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
             builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
+            builder.Entity<CatalogItem>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
 
             DataBaseContextSeed.CatalogSeed(builder);
 

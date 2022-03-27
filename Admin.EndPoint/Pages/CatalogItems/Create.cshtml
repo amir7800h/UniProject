@@ -5,7 +5,7 @@
 
 
 <section class="card">
-    <div class="row">
+    <div class="row" >
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
@@ -19,7 +19,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-12 mb-1">
                                 <fieldset class="form-group">
                                     <label for="basicInput">نام کاتالوگ </label>
-                                    <input type="text"  class="form-control" id="Name">
+                                    <input type="text" asp-for="Data.Name"  class="form-control" id="Name">
                                     <span asp-validation-for="Data.Name" class="text-danger"></span>
                                 </fieldset>
                             </div>
@@ -35,7 +35,7 @@
                                 <fieldset class="form-group">
                                     <label for="basicInput">دسته بندی </label>
 
-                                    <select class="form-control" id="Category" asp-items="Model.Categories"></select>
+                                    <select class="form-control" id="Category" asp-items="@Model.Categories"></select>
                                 </fieldset>
                             </div>
 
@@ -172,14 +172,16 @@
 
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
-   @* <script src="https://cdn.ckeditor.com/4.13.0/standard-all/ckeditor.js"></script>
+   
+   <script src="~/ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('Description', {
             language: 'fa',
             contentsLangDirection: 'rtl',
             height: 270,
+            
         });
-    </script>*@
+    </script>
 
     <script>
 
@@ -226,7 +228,7 @@
             data.append("RestockThreshold", $("#RestockThreshold").val());
             data.append("MaxStockThreshold", $("#MaxStockThreshold").val());
             data.append("Price", $("#Price").val());
-            data.append("Description", $("#Description").val());
+            data.append("Description", $("#Description").Value);
 
             data.append("CatalogTypeId", $('#Category').find('option:selected').val());
             data.append("CatalogBrandId", $('#Brand').find('option:selected').val());

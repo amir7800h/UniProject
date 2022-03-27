@@ -1,5 +1,7 @@
 ﻿using Application.Contexts.Interfaces;
+using Application.Dtos;
 using AutoMapper;
+using Common;
 using Domain.Catalogs;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -14,6 +16,9 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
     {
         List<CatalogBrandDto> GetBrand();
         List<ListCatalogTypeDto> GetCatalogType();
+        PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize);
+        BaseDto RemoveCatalog(int Id);
+
     }
 
     public class CatalogItemService : ICatalogItemService
@@ -34,6 +39,21 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
             return result;
         }
 
+        public PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize)
+        {
+            int rowCount = 0;
+            var data = context.CatalogItems
+                .Include(p => p.CatalogType)
+                .Include(p => p.CatalogBrand)
+                .ToPaged(page, pageSize, out rowCount)
+                
+                .OrderByDescending(p => p.Id).ToList() ;
+
+            var result = mapper.Map<List<CatalogItemListItemDto>>(data);
+
+            return new PaginatedItemsDto<CatalogItemListItemDto>(page, pageSize, rowCount, result);
+        }
+
         public List<ListCatalogTypeDto> GetCatalogType()
         {
             var catalogTypes = context.CatalogTypes
@@ -52,6 +72,21 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
                 }).ToList();
             return catalogTypes;
         }
+
+        public BaseDto RemoveCatalog(int Id)
+        {
+            var catalog = context.CatalogItems.SingleOrDefault(p => p.Id == Id);
+            if (catalog != null)
+            {
+                context.CatalogItems.Remove(catalog);
+                context.SaveChanges();
+                return new BaseDto(true, new List<string> { "محصول با موفقیت حذف شد" });
+            }
+            else
+            {
+                return new BaseDto(false, new List<string> { "محصول پیدا نشد" });
+            }             
+        }
     }
 
     public class CatalogBrandDto
@@ -63,5 +98,17 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
     {
         public int Id { get; set; }
         public string Type { get; set; }
+    }
+
+    public class CatalogItemListItemDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Price { get; set; }
+        public string Type { get; set; }
+        public string Brand { get; set; }
+        public int AvailableStock { get; set; }
+        public int RestockThreshold { get; set; }
+        public int MaxStockThreshold { get; set; }
     }
 }
