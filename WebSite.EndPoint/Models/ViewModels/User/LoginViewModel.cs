@@ -17,7 +17,7 @@ namespace WebSite.EndPoint.Models.ViewModels.User
         [Display(Name = "Remember Me")]
         public bool IsPersistent { get; set; } = false;
 
-        public string ReturnUrl { get; set; }
+       
 
     }
 }

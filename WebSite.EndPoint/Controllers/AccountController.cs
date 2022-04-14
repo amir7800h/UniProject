@@ -1,4 +1,6 @@
-﻿using Application.Sevices.GoogleRecaptchaService;
+﻿using Application.Baskets;
+using Application.Sevices.GoogleRecaptchaService;
+using Common;
 using Domain.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +14,14 @@ namespace WebSite.EndPoint.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        private readonly IBasketService basketService;
+
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager
+            , IBasketService basketService)
         {
             _userManager = userManager;
-            _signInManager = signInManager; 
+            _signInManager = signInManager;
+            this.basketService = basketService;
         }
         public IActionResult Register()
         {
@@ -42,6 +48,9 @@ namespace WebSite.EndPoint.Controllers
             var result = _userManager.CreateAsync(newUser, model.Password).Result;
             if (result.Succeeded)
             {
+                var user = _userManager.FindByNameAsync(newUser.Email).Result;
+                TransferBasketForuser(user.Id);
+                _signInManager.SignInAsync(user, true).Wait();
                 return RedirectToAction(nameof(Profile));
             }
             string erros = "";
@@ -55,30 +64,31 @@ namespace WebSite.EndPoint.Controllers
 
             return View(model);
         }
-        public IActionResult Login(string returnUrl = "/")
+        
+        public IActionResult Login()
         {
-            return View(new LoginViewModel
-            {
-                ReturnUrl = returnUrl,
-            });
+
+            return View();            
         }
         [HttpPost]
-        public IActionResult Login(LoginViewModel model)
-        {
-
+        public IActionResult Login(LoginViewModel model, string ReturnUrl)
+        {      
             string googleResponse = HttpContext.Request.Form["g-Recaptcha-Response"];
-
             GoogleRecaptcha googleRecaptcha = new GoogleRecaptcha();
-            if(googleRecaptcha.Verify(googleResponse) == false)
-            {
-                ModelState.AddModelError("", "لطفا بروی من ربات نیستم کلیک کنید");
-                return View(model);
-            }
 
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            if (ReturnUrl == null)
+                ReturnUrl = "/";
+
+            //if(googleRecaptcha.Verify(googleResponse) == false)
+            //{
+            //    ModelState.AddModelError("", "لطفا بروی من ربات نیستم کلیک کنید");
+            //    return View(model);
+            //}
+
+            //if (!ModelState.IsValid)
+            //{
+            //    return View(model);
+            //}
             var user = _userManager.FindByNameAsync(model.Email).Result;
             if(user == null)
             {
@@ -92,7 +102,9 @@ namespace WebSite.EndPoint.Controllers
 
             if (result.Succeeded)
             {
-                return Redirect(model.ReturnUrl);
+                TransferBasketForuser(user.Id);
+                //return new LocalRedirectResult(returnUrl);
+                return LocalRedirect(ReturnUrl);
             }
             if (result.RequiresTwoFactor)
             {
@@ -116,6 +128,17 @@ namespace WebSite.EndPoint.Controllers
         {
             ViewData["Message"] = "Salam ....";
             return View();
+        }
+
+
+        private void TransferBasketForuser(string userId)
+        {
+            if (Request.Cookies.ContainsKey(CookiesName.BasketId))
+            {
+                string anonymouseId = Request.Cookies[CookiesName.BasketId];
+                basketService.TransferBasket(anonymouseId, userId);
+                Response.Cookies.Delete(CookiesName.BasketId);                
+            }    
         }
     }
 }

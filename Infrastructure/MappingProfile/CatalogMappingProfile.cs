@@ -1,5 +1,6 @@
 ﻿using Application.Catalogs.CatalogItems.AddNewCatalogItem;
 using Application.Catalogs.CatalogItems.CatalogItemService;
+using Application.Catalogs.CatalogItems.GetCatalogIItemPLP;
 using Application.Catalogs.CatalogTypes.CrudService;
 using Application.Catalogs.GetMenuItem;
 using AutoMapper;
@@ -24,9 +25,10 @@ namespace Infrastructure.MappingProfile
                  opt.MapFrom(src => src.CatalogType.Type))
                 .ForMember(dest => dest.Brand, opt =>
                 opt.MapFrom(src => src.CatalogBrand.Brand));
-                
-                
-            
+
+
+          
+
 
             CreateMap<CatalogType, CatalogTypeListDto>()
                 .ForMember(dest => dest.SubTypeCount, option =>

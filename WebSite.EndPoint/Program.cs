@@ -1,3 +1,7 @@
+using Application.Baskets;
+using Application.Catalogs.CatalogItems.GetCatalogIItemPLP;
+using Application.Catalogs.CatalogItems.GetCatalogItemPDP;
+using Application.Catalogs.CatalogItems.UriComposer;
 using Application.Catalogs.GetMenuItem;
 using Application.Contexts.Interfaces;
 using Application.Interfaces.Contexts;
@@ -38,7 +42,11 @@ builder.Services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>()
 builder.Services.AddScoped<SaveVisitorFilter>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IVisitorOnlineService, VisitorOnlineService>();
-builder.Services.AddTransient<IGetMenuItemService, GetMenuItemService>();   
+builder.Services.AddTransient<IGetMenuItemService, GetMenuItemService>();
+builder.Services.AddTransient<IGetCatalogIItemPLPService, GetCatalogIItemPLPService>();
+builder.Services.AddTransient<IUriComposerService, UriComposerService>();
+builder.Services.AddTransient<IGetCatalogItemPDPService, GetCatalogItemPDPService>();
+builder.Services.AddTransient<IBasketService, BasketService>();
 builder.Services.AddSignalR();
 
 //mapper

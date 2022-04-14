@@ -34,6 +34,7 @@ builder.Services.AddTransient<ICatalogTypeService, CatalogTypeService>();
 builder.Services.AddTransient<ICatalogItemService, CatalogItemService>();
 builder.Services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
 
+
 //mapper
 builder.Services.AddAutoMapper(typeof(CatalogMappingProfile));
 builder.Services.AddAutoMapper(typeof(CatalogVMMappingProfile));

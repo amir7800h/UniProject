@@ -10,6 +10,7 @@ using Domain.Attributes;
 using Domain.Catalogs;
 using Persistence.EntityConfigurations;
 using Persistence.Seeds;
+using Domain.Baskets;
 
 namespace Persistence.Contexts
 {
@@ -20,6 +21,8 @@ namespace Persistence.Contexts
         public DbSet<CatalogItem> CatalogItems { get; set; }
         public DbSet<CatalogItemFeature> CatalogItemFeatures { get; set; }
         public DbSet<CatalogItemImage> CatalogItemImages { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
 
 
         public DataBaseContext(DbContextOptions<DataBaseContext> option):base(option)
@@ -42,6 +45,8 @@ namespace Persistence.Contexts
             builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
             builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
             builder.Entity<CatalogItem>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
+            builder.Entity<Basket>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
+            builder.Entity<BasketItem>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
 
             DataBaseContextSeed.CatalogSeed(builder);
 
