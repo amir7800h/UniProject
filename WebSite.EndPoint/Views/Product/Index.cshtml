@@ -265,7 +265,10 @@
                                 <button class="add-to-compare"><i class="fas fa-random"></i></button>
                             </div>
                         </div>
-                        <div class="product-card-middle">
+                        
+                            @if(item.AvailableStock  <= 0)
+                            {
+                                <div class="product-card-middle">
                             <div class="ratings-container">
                                 <div class="ratings">
                                     @{ int rate = item.Rate * 20; }
@@ -277,6 +280,34 @@
                                      @item.Name
                                 </a>
                             </h6>
+                        
+                            <div class="product-price product-price-clone">ناموجود</div>
+                        </div>
+                        <div class="product-card-bottom">
+                            <div class="product-price">
+                                ناموجود
+                            </div>
+                            <a href="#" class="btn-add-to-cart">
+                                <i class="fad fa-cart-plus "></i>
+                                ناموجود
+                            </a>
+                            </div>
+                        }
+                        else
+                        {
+                             <div class="product-card-middle">
+                            <div class="ratings-container">
+                                <div class="ratings">
+                                    @{ int rate = item.Rate * 20; }
+                                    <div class="ratings-val" style="width: @rate%;"></div>
+                                </div>
+                            </div>
+                            <h6 class="product-name">
+                                <a href="#">
+                                     @item.Name
+                                </a>
+                            </h6>
+                        
                             <div class="product-price product-price-clone">@item.Price.ToString("n0") تومان</div>
                         </div>
                         <div class="product-card-bottom">
@@ -288,6 +319,10 @@
                                 افزودن به سبد خرید
                             </a>
                         </div>
+
+                        }
+
+                       
                     </div>
                 </div>
             }

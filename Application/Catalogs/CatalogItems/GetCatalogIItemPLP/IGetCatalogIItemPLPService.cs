@@ -32,15 +32,20 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
         }
         public PaginatedItemsDto<CatalogPLPDto> Execute(int page, int pageSize)
         {
+         
             int rowCount = 0;
-            var data= context.CatalogItems.Include(p=> p.CatalogItemImages)
+            var data= context.CatalogItems
+                .Include(p=> p.CatalogItemImages)
+                .Include(p=> p.Discounts)
                 .OrderByDescending(p=> p.Id)
                 .PagedResult(page, pageSize, out rowCount)
+                .ToList()
                 .Select(p=> new CatalogPLPDto
                 {
                     Id = p.Id,
                     Name = p.Name,
                     Price = p.Price,
+                    AvailableStock = p.AvailableStock,
                     Rate = 4,
                     Image = uriComposerService
                     .ComposeImageUri(p.CatalogItemImages.FirstOrDefault().Src),
@@ -55,6 +60,7 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
         public int Id { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }
+        public int AvailableStock { get; set; }
         public string Image { get; set; }
         public byte Rate { get; set; }
     }

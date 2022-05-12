@@ -3,6 +3,8 @@ using Application.Catalogs.CatalogItems.AddNewCatalogItem;
 using Application.Catalogs.CatalogItems.CatalogItemService;
 using Application.Catalogs.CatalogTypes.CrudService;
 using Application.Contexts.Interfaces;
+using Application.Discounts;
+using Application.Discounts.AddNewDiscountService;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetVisitorReports;
 using FluentValidation;
@@ -17,7 +19,8 @@ using Persistence.Contexts.MongoContext;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages().AddFluentValidation();
+builder.Services.AddRazorPages();
+builder.Services.AddControllers();
 
 builder.Services.AddScoped<IGetVisitorReportService, GetVisitorReportService>();
 builder.Services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
@@ -33,7 +36,9 @@ builder.Services.AddTransient<IImageUploadService, ImageUploadService>();
 builder.Services.AddTransient<ICatalogTypeService, CatalogTypeService>();
 builder.Services.AddTransient<ICatalogItemService, CatalogItemService>();
 builder.Services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
-
+builder.Services.AddTransient<IAddNewDiscountService, AddNewDiscountService>();
+builder.Services.AddTransient<IDiscountService, DiscountService>();
+builder.Services.AddTransient<IDiscountHistoryService, DiscountHistoryService>();
 
 //mapper
 builder.Services.AddAutoMapper(typeof(CatalogMappingProfile));
@@ -41,7 +46,7 @@ builder.Services.AddAutoMapper(typeof(CatalogVMMappingProfile));
 
 
 
-builder.Services.AddTransient<IValidator<AddNewCatalogItemDto>, AddNewCatalogItemDtoValidator>().AddFluentValidation();
+
 
 var app = builder.Build();
 
@@ -61,5 +66,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapControllers();
 
 app.Run();

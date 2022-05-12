@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xb6pJGPbBbwf/1dqvJD2eh1LVkA6mJ06Dq12a61pLmjQz5gIwjvPMW6C6FoMT6nGWVXSn/ryUlM/cXfFHiqwmQ==",
+  "dgSpecHash": "n6mdFPRP8DFJO5HWiivq779UjGS1ZD1dA3udXVoaPLDv2gxxWAjzuyJ8dZIwZlGb3wJGZJK07pVnuTECl8IsBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.2\\microsoft.aspnetcore.cryptography.internal.6.0.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.2\\microsoft.aspnetcore.cryptography.keyderivation.6.0.2.nupkg.sha512",

@@ -28,14 +28,15 @@
                 </label>
             </div>
        
-                <input type="hidden" name="ReturnUrl" class="form-control" value="@ViewBag.ReturnUrl"/>
-          
+                @*<input type="hidden" name="ReturnUrl" class="form-control" value="@ViewBag.ReturnUrl"/>*@
+           <input type="hidden" asp-for="ReturnUrl" />
             <div class="form-group">
                 <input type="submit" value="ورود" class="btn btn-primary" />
             </div>
 
             <div class="g-recaptcha" data-sitekey="6LdokY4eAAAAANNLirQfKlVjm1E75RJSh_ksVn0f">
 </div>
+
         </form>
     </div>
 </div>

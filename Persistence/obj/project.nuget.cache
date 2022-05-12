@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4mqYiXUL5omEcVbVm1Tj1GpCcuN5v5XpPQqJz4iP/syEULQMR9syj0pIjB758DFPQ6XHIZEOBGiCmEsQfrC0Wg==",
+  "dgSpecHash": "sA2GA/loRbnfffk9j9N+TfYU4Z/EBIkBW61zblPcEp4AQTQexVn6WhIs9R1SKL5q5RjEELDooCa3i0lC3Zf/+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",

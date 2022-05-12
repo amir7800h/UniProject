@@ -65,19 +65,19 @@ namespace WebSite.EndPoint.Controllers
             return View(model);
         }
         
-        public IActionResult Login()
+        public IActionResult Login(string returnUrl = "/")
         {
 
-            return View();            
+            return View(new LoginViewModel
+            {
+                ReturnUrl  = returnUrl
+            });            
         }
         [HttpPost]
-        public IActionResult Login(LoginViewModel model, string ReturnUrl)
+        public IActionResult Login(LoginViewModel model)
         {      
             string googleResponse = HttpContext.Request.Form["g-Recaptcha-Response"];
             GoogleRecaptcha googleRecaptcha = new GoogleRecaptcha();
-
-            if (ReturnUrl == null)
-                ReturnUrl = "/";
 
             //if(googleRecaptcha.Verify(googleResponse) == false)
             //{
@@ -102,9 +102,9 @@ namespace WebSite.EndPoint.Controllers
 
             if (result.Succeeded)
             {
+                
                 TransferBasketForuser(user.Id);
-                //return new LocalRedirectResult(returnUrl);
-                return LocalRedirect(ReturnUrl);
+                return Redirect(model?.ReturnUrl ?? "/");
             }
             if (result.RequiresTwoFactor)
             {

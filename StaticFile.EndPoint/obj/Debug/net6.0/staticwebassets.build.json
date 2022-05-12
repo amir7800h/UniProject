@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IdzWuPplXMhiJCzVZfcDHHlBz+MIiADAxTF1w9LHUEE=",
+  "Hash": "V5CucdAaxcI/oorksyZSr1rhZpHabLHlwblOMliTVq8=",
   "Source": "StaticFile.EndPoint",
   "BasePath": "_content/StaticFile.EndPoint",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "StaticFile.EndPoint\\wwwroot",
       "Source": "StaticFile.EndPoint",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StaticFile.EndPoint.styles.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StaticFile.EndPoint.styles.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "StaticFile.EndPoint.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StaticFile.EndPoint.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\bundle\\StaticFile.EndPoint.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StaticFile.EndPoint.bundle.scp.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StaticFile.EndPoint.bundle.scp.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "StaticFile.EndPoint.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StaticFile.EndPoint.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\StaticFile.EndPoint.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\css\\site.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\favicon.ico",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\js\\site.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\0a0a4fc6-1b4a-4867-b64b-f64ec5edc016IMG_1107.JPG",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\0a0a4fc6-1b4a-4867-b64b-f64ec5edc016IMG_1107.JPG",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-3/0a0a4fc6-1b4a-4867-b64b-f64ec5edc016IMG_1107.JPG",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\0a0a4fc6-1b4a-4867-b64b-f64ec5edc016IMG_1107.JPG"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\1621c8eb-4a31-493c-957b-16dae608ae25IMG_1107.JPG",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\1621c8eb-4a31-493c-957b-16dae608ae25IMG_1107.JPG",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-3/1621c8eb-4a31-493c-957b-16dae608ae25IMG_1107.JPG",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\1621c8eb-4a31-493c-957b-16dae608ae25IMG_1107.JPG"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1107.JPG",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1107.JPG",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-3/bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1107.JPG",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1107.JPG"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1108.PNG",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1108.PNG",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-3/bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1108.PNG",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\bc85e685-f0bf-45e4-a0e0-a2fc3b7fcce9IMG_1108.PNG"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-3\\eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-3/eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG",
       "AssetKind": "All",
@@ -1156,10 +1156,61 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-3\\eb85c6f0-6ce5-4261-8733-638c971fed58IMG_1111.PNG"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\bd47ee98-b682-408d-8e40-d3d3d35d45582fbf7_1615294432.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\9e01d956-e0d5-4167-a997-b253ede630961cce4137f0efbe7203c2dd4654584fd7ce5fb829_1620202317.jpg",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-4/9e01d956-e0d5-4167-a997-b253ede630961cce4137f0efbe7203c2dd4654584fd7ce5fb829_1620202317.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\9e01d956-e0d5-4167-a997-b253ede630961cce4137f0efbe7203c2dd4654584fd7ce5fb829_1620202317.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\9e01d956-e0d5-4167-a997-b253ede63096520e8fce27cf3501d11c3cf85f75c6063a939c9d_1620202312.jpg",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-4/9e01d956-e0d5-4167-a997-b253ede63096520e8fce27cf3501d11c3cf85f75c6063a939c9d_1620202312.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\9e01d956-e0d5-4167-a997-b253ede63096520e8fce27cf3501d11c3cf85f75c6063a939c9d_1620202312.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\9e01d956-e0d5-4167-a997-b253ede63096d28477631cc44d8831235f576a97d7e4d02cb38a_1620202321.jpg",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-4/9e01d956-e0d5-4167-a997-b253ede63096d28477631cc44d8831235f576a97d7e4d02cb38a_1620202321.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\9e01d956-e0d5-4167-a997-b253ede63096d28477631cc44d8831235f576a97d7e4d02cb38a_1620202321.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\bd47ee98-b682-408d-8e40-d3d3d35d45582fbf7_1615294432.jpg",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-4/bd47ee98-b682-408d-8e40-d3d3d35d45582fbf7_1615294432.jpg",
       "AssetKind": "All",
@@ -1173,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\bd47ee98-b682-408d-8e40-d3d3d35d45582fbf7_1615294432.jpg"
     },
     {
-      "Identity": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\bd47ee98-b682-408d-8e40-d3d3d35d4558ecd17a482bc875_1615294436.jpg",
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\bd47ee98-b682-408d-8e40-d3d3d35d4558ecd17a482bc875_1615294436.jpg",
       "SourceId": "StaticFile.EndPoint",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
       "BasePath": "_content/StaticFile.EndPoint",
       "RelativePath": "Resources/images/2022/2022-4/bd47ee98-b682-408d-8e40-d3d3d35d4558ecd17a482bc875_1615294436.jpg",
       "AssetKind": "All",
@@ -1188,6 +1239,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\bd47ee98-b682-408d-8e40-d3d3d35d4558ecd17a482bc875_1615294436.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\c992fee6-09f0-419f-b7d1-ff4ce9d4a9d3783763b696fb4f133cc6918e35d3c5682ce070aa_1623858060.jpg",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-4/c992fee6-09f0-419f-b7d1-ff4ce9d4a9d3783763b696fb4f133cc6918e35d3c5682ce070aa_1623858060.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\c992fee6-09f0-419f-b7d1-ff4ce9d4a9d3783763b696fb4f133cc6918e35d3c5682ce070aa_1623858060.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\c992fee6-09f0-419f-b7d1-ff4ce9d4a9d38122d3a243a6d838b47959c561871b2dabcec6f4_1615294435.jpg",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-4/c992fee6-09f0-419f-b7d1-ff4ce9d4a9d38122d3a243a6d838b47959c561871b2dabcec6f4_1615294435.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\c992fee6-09f0-419f-b7d1-ff4ce9d4a9d38122d3a243a6d838b47959c561871b2dabcec6f4_1615294435.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\Resources\\images\\2022\\2022-4\\c992fee6-09f0-419f-b7d1-ff4ce9d4a9d3eb00ccf94a30cbd15f4d273750965fb10e7f82d9_1615294432.jpg",
+      "SourceId": "StaticFile.EndPoint",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\wwwroot\\",
+      "BasePath": "_content/StaticFile.EndPoint",
+      "RelativePath": "Resources/images/2022/2022-4/c992fee6-09f0-419f-b7d1-ff4ce9d4a9d3eb00ccf94a30cbd15f4d273750965fb10e7f82d9_1615294432.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Resources\\images\\2022\\2022-4\\c992fee6-09f0-419f-b7d1-ff4ce9d4a9d3eb00ccf94a30cbd15f4d273750965fb10e7f82d9_1615294432.jpg"
     }
   ]
 }

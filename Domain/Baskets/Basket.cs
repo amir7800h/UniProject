@@ -1,5 +1,6 @@
 ﻿using Domain.Attributes;
 using Domain.Catalogs;
+using Domain.Discounts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,10 @@ namespace Domain.Baskets
         private readonly List<BasketItem> _items = new List<BasketItem>();
         public ICollection<BasketItem> Items => _items.AsReadOnly();
 
+        public int DiscountAmount { get; private set; } = 0;
+        public Discount AppliedDiscount { get; private set; }
+        public int? AppliedDiscountId { get; private set; }
+
         public Basket(string buyerId)
         {
             this.BuyerId = buyerId;
@@ -23,6 +28,7 @@ namespace Domain.Baskets
 
         public void AddItem(int catalogItemId, int quantity, int unitPrice)
         {
+
             if(!Items.Any(p=> p.CatalogItemId == catalogItemId))
             {
                 _items.Add(new BasketItem(catalogItemId, quantity, unitPrice));
@@ -30,6 +36,33 @@ namespace Domain.Baskets
             }
             var existingItem = Items.FirstOrDefault(p => p.CatalogItemId == catalogItemId);
             existingItem.AddQuantity(quantity);
+        }
+
+        public int TotalPriceWithOutDiescount()
+        {
+            int totalPrice = _items.Sum(p => p.UnitPrice * p.Quantity);
+            return totalPrice;
+        }
+
+        public int TotalPrice()
+        {
+            int totalPrice = _items.Sum(p => p.UnitPrice * p.Quantity);
+            totalPrice -= AppliedDiscount.GetDiscountAmount(totalPrice);
+            return totalPrice;
+        }
+
+        public void ApplyDisCountCode(Discount discount)
+        {
+            this.AppliedDiscount = discount;
+            this.AppliedDiscountId = discount.Id;
+            this.DiscountAmount = discount.GetDiscountAmount(TotalPriceWithOutDiescount());
+        }
+
+        public void RemoveDescount()
+        {
+            AppliedDiscount = null;
+            AppliedDiscountId = null;
+            DiscountAmount = 0;
         }
     }
 
@@ -44,7 +77,7 @@ namespace Domain.Baskets
         public int BasketId { get; private set; }
 
         public BasketItem(int catalogItemId, int quantity, int unitPrice)
-        {
+        {            
             CatalogItemId = catalogItemId;
             UnitPrice = unitPrice;
             SetQuantity(quantity);

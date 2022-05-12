@@ -11,6 +11,9 @@ using Domain.Catalogs;
 using Persistence.EntityConfigurations;
 using Persistence.Seeds;
 using Domain.Baskets;
+using Domain.Orders;
+using Domain.Payments;
+using Domain.Discounts;
 
 namespace Persistence.Contexts
 {
@@ -23,7 +26,15 @@ namespace Persistence.Contexts
         public DbSet<CatalogItemImage> CatalogItemImages { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<CatalogItemFavourite> CatalogItemFavourites { get; set; }
 
+        public DbSet<UserAddress> UserAddresses { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<Discount> Discounts { get; set; }
+        public DbSet<DiscountUsageHistory> DiscountUsageHistory { get; set; }
 
         public DataBaseContext(DbContextOptions<DataBaseContext> option):base(option)
         {
@@ -50,6 +61,9 @@ namespace Persistence.Contexts
 
             DataBaseContextSeed.CatalogSeed(builder);
 
+            builder.Entity<Order>().OwnsOne(p => p.Address);
+
+
             base.OnModelCreating(builder);
         }
 
@@ -63,26 +77,29 @@ namespace Persistence.Contexts
             foreach(var item in modifiedEntries)
             {
                 var entityType = item.Context.Model.FindEntityType(item.Entity.GetType());
+                if(entityType != null)
+                {
+                    var inserted = entityType.FindProperty("InsertTime");
+                    var updated = entityType.FindProperty("UpdateTime");
+                    var removeTime = entityType.FindProperty("RemoveTime");
+                    var isRemoved = entityType.FindProperty("IsRemoved");
 
-                var inserted = entityType.FindProperty("InsertTime");
-                var updated = entityType.FindProperty("UpdateTime");
-                var removeTime = entityType.FindProperty("RemoveTime");
-                var isRemoved = entityType.FindProperty("IsRemoved");
-
-                if(item.State == EntityState.Added && inserted != null)
-                {
-                    item.Property("InsertTime").CurrentValue = DateTime.Now;                    
+                    if (item.State == EntityState.Added && inserted != null)
+                    {
+                        item.Property("InsertTime").CurrentValue = DateTime.Now;
+                    }
+                    if (item.State == EntityState.Modified && updated != null)
+                    {
+                        item.Property("UpdateTime").CurrentValue = DateTime.Now;
+                    }
+                    if (item.State == EntityState.Deleted && isRemoved != null && isRemoved != null)
+                    {
+                        item.Property("RemoveTime").CurrentValue = DateTime.Now;
+                        item.Property("IsRemoved").CurrentValue = true;
+                        item.State = EntityState.Modified;
+                    }
                 }
-                if(item.State == EntityState.Modified && updated != null)
-                {
-                    item.Property("UpdateTime").CurrentValue = DateTime.Now;
-                }
-                if(item.State == EntityState.Deleted && isRemoved != null && isRemoved != null)
-                {
-                    item.Property("RemoveTime").CurrentValue = DateTime.Now;
-                    item.Property("IsRemoved").CurrentValue = true;
-                    item.State = EntityState.Modified;
-                }
+             
             }
             return base.SaveChanges();
         }

@@ -81,10 +81,15 @@
                     <ul class="product--actions">
                         <li>
                             <!-- در صورت نیاز به استفاده از فرم از کد زیر استفاده کنید -->
-                            <!-- <form action="">
+                            <form asp-area="Customers" asp-action="AddToMyFavourite"  asp-controller="MyFavourite" method="get">
+                                <input type="hidden" value="@Model.Id" name="CatalogItemId" />
                                 <button class="add-to-favorite"><i class="fas fa-heart"></i></button>
-                            </form> -->
-                            <a href="#" class="is-action add-to-favorite"><i class="fas fa-heart"></i></a>
+                            </form> 
+                           @* <a asp-area="Customers" 
+                            asp-action="AddToMyFavourite" 
+                            asp-controller="MyFavourite" 
+                            asp-route-CatalogItemId="@Model.Id"
+                            class="is-action add-to-favorite"><i class="fas fa-heart"></i></a>*@
                             <span class="tooltip--action">افزودن به علاقمندی</span>
                         </li>
                         <li>
@@ -158,10 +163,21 @@
                         <div class="product-price">
                             <div class="product-price-info">
                                 <div class="product-price-off">
-                                    %10 <span>تخفیف</span>
+                                    @if(Model.PercentDiscount != 0)
+                                    {
+                                        <div>
+                                            %@Model.PercentDiscount
+                                            <span> تخفیف </span>
+                                        </div>
+                                    }                                   
                                 </div>
                                 <div class="product-price-prev">
-                                    3,216,000
+                                     @if (Model.OldPrice != 0)
+                                    {
+                                        <span>
+                                            @Model.OldPrice.Value.ToString("n0")
+                                        </span>
+                                    }
                                 </div>
                             </div>
                             <div class="product-price-real">

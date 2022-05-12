@@ -43,8 +43,8 @@
                         <div class="top-header-menu">
                             <ul>
                                 <li><a href="#">خانه</a></li>
-                                <li><a href="#">پیگیری سفارش</a></li>
-                                <li><a href="#">فروشگاه</a></li>
+                                <li><a>پیگیری سفارش</a></li>
+                                <li><a asp-controller="product" asp-action="index" >فروشگاه</a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                                             </span>
                                             <span class="header-profile-dropdown-user-info">
                                                 <p class="header-profile-dropdown-user-name">
-                                                    جلال بهرامی راد
+                                                    @User.Identity.Name
                                                 </p>
                                                 <span class="header-profile-dropdown-user-profile-link">
                                                     مشاهده حساب

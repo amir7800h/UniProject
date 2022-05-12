@@ -1,4 +1,5 @@
 ﻿using Domain.Attributes;
+using Domain.Discounts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Domain.Catalogs
         public int? ParentCatalogTypeId { get; set; }
         public CatalogType ParentCatalogType { get; set; }  
         public ICollection<CatalogType> SubType { get; set; }
+        public ICollection<Discount> Discounts { get; set; }
 
     }
 }

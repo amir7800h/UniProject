@@ -1,5 +1,6 @@
 ﻿using Application.Catalogs.CatalogItems.UriComposer;
 using Application.Contexts.Interfaces;
+using Application.Discounts;
 using Domain.Baskets;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -23,12 +24,15 @@ namespace Application.Baskets
     {
         private readonly IDataBaseContext context;
         private readonly IUriComposerService uriComposerService;
+        private readonly IDiscountService discountService;
 
         public BasketService(IDataBaseContext context
-            , IUriComposerService uriComposerService)
+            , IUriComposerService uriComposerService
+            , IDiscountService discountService)
         {
             this.context = context;
             this.uriComposerService = uriComposerService;
+            this.discountService = discountService;
         }
 
         public void AddItemToBasket(int basketId, int catalogItemId, int quantity = 1)
@@ -38,7 +42,10 @@ namespace Application.Baskets
             if (basket == null)
                 throw new Exception();
 
-            var basketItem = context.CatalogItems.Find(catalogItemId);
+            var basketItem = context.CatalogItems
+                .Include(p=> p.Discounts)
+                .SingleOrDefault(p=> p.Id == catalogItemId);
+
             basket.AddItem(catalogItemId, quantity, basketItem.Price);
             context.SaveChanges();  
         }
@@ -49,6 +56,9 @@ namespace Application.Baskets
               .Include(p => p.Items)
               .ThenInclude(p => p.CatalogItem)
               .ThenInclude(p => p.CatalogItemImages)
+              .Include(p=> p.Items)
+              .ThenInclude(p=> p.CatalogItem)
+              .ThenInclude(p=> p.Discounts)
               .SingleOrDefault(p => p.BuyerId == UserId);
             if (basket == null)
             {
@@ -77,15 +87,26 @@ namespace Application.Baskets
                 .Include(p => p.Items)
                 .ThenInclude(p => p.CatalogItem)
                 .ThenInclude(p => p.CatalogItemImages)
+                 .Include(p => p.Items)
+                .ThenInclude(p => p.CatalogItem)
+                .ThenInclude(p => p.Discounts)
                 .SingleOrDefault(p=> p.BuyerId == BuyerId);
+    
             if(basket == null)
             {
                 return CreateBasketForUser(BuyerId);
             }
-            return new BasketDto
+
+            var basketItems = context.BasketItems
+                .Include(p => p.CatalogItem)
+                .Where(p => p.BasketId == basket.Id)
+                .ToList();
+
+            var res = new BasketDto
             {
                 BuyerId = basket.BuyerId,
                 Id = basket.Id,
+                DiscountAmount = basket.DiscountAmount,                
                 Items = basket.Items.Select(item => new BasketItemDto
                 {
                     CatalogItemId = item.CatalogItemId,
@@ -98,11 +119,22 @@ namespace Application.Baskets
                 }).ToList(),
             };
 
+            int totalWithOutDiescount = 0;
+            foreach (var item in basketItems)
+            {
+                totalWithOutDiescount += (item?.CatalogItem?.OldPrice ?? item.CatalogItem.Price) * item.Quantity;
+            }
+            res.TotalWithOutDiescount = totalWithOutDiescount;
+            return res;                
+
         }
 
         public bool RemoveItemFromBasket(int ItemId)
         {
-            var item = context.BasketItems.SingleOrDefault(p => p.Id == ItemId);
+            var item = context.BasketItems
+                .SingleOrDefault(p => p.Id == ItemId);
+            var basket = context.Baskets.Find(item.BasketId);
+            basket.RemoveDescount();
             context.BasketItems.Remove(item);
             context.SaveChanges();
             return true;
@@ -118,11 +150,14 @@ namespace Application.Baskets
 
         public void TransferBasket(string anonymousId, string UserId)
         {
-            var anonymousBasket = context.Baskets.Include(p=> p.Items)
+            var anonymousBasket = context.Baskets
+                .Include(p=> p.Items)
+                .Include(p=> p.AppliedDiscount)
                .SingleOrDefault(p => p.BuyerId == anonymousId);
                
             if (anonymousBasket == null) return;
-            var userBasket = context.Baskets.SingleOrDefault(p => p.BuyerId == UserId);
+            var userBasket = context.Baskets
+                .Include(p=> p.Items).SingleOrDefault(p => p.BuyerId == UserId);
             if (userBasket == null)
             {
                 userBasket = new Basket(UserId);
@@ -131,6 +166,11 @@ namespace Application.Baskets
             foreach (var item in anonymousBasket.Items)
             {
                 userBasket.AddItem(item.CatalogItemId, item.Quantity, item.UnitPrice);
+            }
+
+            if (anonymousBasket.AppliedDiscount != null)
+            {
+                userBasket.ApplyDisCountCode(anonymousBasket.AppliedDiscount);
             }
 
             context.Baskets.Remove(anonymousBasket);
@@ -155,14 +195,28 @@ namespace Application.Baskets
         public int Id { get; set; }
         public string BuyerId { get; set; }
         public List<BasketItemDto> Items { get; set; } = new List<BasketItemDto>();
+        public int DiscountAmount { get; set; }
+        public int TotalWithOutDiescount { get; set; }
         public int Total()
         {
             if(Items.Count > 0)
             {
-                return Items.Sum(p=> p.Quantity * p.UnitPrice);
+                int total = Items.Sum(p=> p.Quantity * p.UnitPrice);
+                total -= DiscountAmount;
+                return total;
             }
             return 0;
         }
+
+        //public int TotalWithOutDiescount()
+        //{
+        //    if(Items.Count > 0)
+        //    {
+        //        int total = Items.Sum(p=> p.UnitPrice * p.Quantity);                
+        //        return total;   
+        //    }
+        //    return 0;
+        //}
 
     }
 

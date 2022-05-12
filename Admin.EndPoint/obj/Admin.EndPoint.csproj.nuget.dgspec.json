@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\Admin.EndPoint.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Admin.EndPoint\\Admin.EndPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\Admin.EndPoint.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Admin.EndPoint\\Admin.EndPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\Admin.EndPoint.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Admin.EndPoint\\Admin.EndPoint.csproj",
         "projectName": "Admin.EndPoint",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\Admin.EndPoint.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Admin.EndPoint\\Admin.EndPoint.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Admin.EndPoint\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Admin.EndPoint\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -53,6 +53,16 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "MD.PersianDateTime": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.4, )"
             }
           },
           "imports": [
@@ -77,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,11 +111,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\Common.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj"
               }
             }
           }
@@ -160,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\Common.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\Common.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -214,14 +224,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -278,14 +288,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -302,8 +312,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -358,14 +368,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -382,11 +392,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Application\\Application.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Application\\Application.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Domain\\Domain.csproj"
+              "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Domain\\Domain.csproj"
               }
             }
           }

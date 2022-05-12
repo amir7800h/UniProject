@@ -1,5 +1,8 @@
 ﻿using Domain.Baskets;
 using Domain.Catalogs;
+using Domain.Discounts;
+using Domain.Orders;
+using Domain.Payments;
 using Domain.Users;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,10 +19,17 @@ namespace Application.Contexts.Interfaces
         DbSet<CatalogType> CatalogTypes { get; set; }
         DbSet<CatalogBrand> CatalogBrands { get; set; }
         DbSet<CatalogItem> CatalogItems { get; set; }
+        DbSet<UserAddress> UserAddresses { get; set; }
+        DbSet<CatalogItemFavourite> CatalogItemFavourites { get; set; }
+        DbSet<Order> Orders { get; set; }
+        DbSet<OrderItem> OrderItems { get; set; }
+        DbSet<Payment> Payments { get; set; }
         DbSet<CatalogItemFeature> CatalogItemFeatures { get; set; }
         DbSet<CatalogItemImage> CatalogItemImages { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
+        DbSet<DiscountUsageHistory> DiscountUsageHistory { get; set; }
+        DbSet<Discount> Discounts { get; set; }
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);
         Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default);

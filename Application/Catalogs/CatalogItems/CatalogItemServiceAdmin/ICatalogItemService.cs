@@ -16,7 +16,7 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
     {
         List<CatalogBrandDto> GetBrand();
         List<ListCatalogTypeDto> GetCatalogType();
-        PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize);
+        PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize);        
         BaseDto RemoveCatalog(int Id);
 
     }
@@ -33,7 +33,7 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
         }
         public List<CatalogBrandDto> GetBrand()
         {
-            var brands = context.CatalogBrands.OrderBy(p=> p.Brand)
+            var brands = context.CatalogBrands.OrderBy(p => p.Brand)
                 .Take(500).ToList();
             var result = mapper.Map<List<CatalogBrandDto>>(brands);
             return result;
@@ -45,9 +45,10 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
             var data = context.CatalogItems
                 .Include(p => p.CatalogType)
                 .Include(p => p.CatalogBrand)
+                .Include(p => p.Discounts)
                 .ToPaged(page, pageSize, out rowCount)
-                
-                .OrderByDescending(p => p.Id).ToList() ;
+
+                .OrderByDescending(p => p.Id).ToList();
 
             var result = mapper.Map<List<CatalogItemListItemDto>>(data);
 
@@ -57,12 +58,12 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
         public List<ListCatalogTypeDto> GetCatalogType()
         {
             var catalogTypes = context.CatalogTypes
-                .Include(p=> p.ParentCatalogType)
-                .Include(p=> p.ParentCatalogType)
-                .ThenInclude(p=> p.ParentCatalogType.ParentCatalogType)
-                .Include(p=> p.SubType)
-                .Where(p=> p.ParentCatalogTypeId != null)
-                .Where(p=> p.SubType.Count == 0)
+                .Include(p => p.ParentCatalogType)
+                .Include(p => p.ParentCatalogType)
+                .ThenInclude(p => p.ParentCatalogType.ParentCatalogType)
+                .Include(p => p.SubType)
+                .Where(p => p.ParentCatalogTypeId != null)
+                .Where(p => p.SubType.Count == 0)
                 .Select(p => new { p.Id, p.Type, p.ParentCatalogType, p.SubType })
                 .ToList()
                 .Select(p => new ListCatalogTypeDto
@@ -85,8 +86,9 @@ namespace Application.Catalogs.CatalogItems.CatalogItemService
             else
             {
                 return new BaseDto(false, new List<string> { "محصول پیدا نشد" });
-            }             
+            }
         }
+
     }
 
     public class CatalogBrandDto

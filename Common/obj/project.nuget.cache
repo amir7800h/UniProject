@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+0cKMFkme0rAwynWXa+iICvDO4w/ZOBqKVsYzCPMQeYd9OeZSjotSudHEvFaNtMUG0Tu8q23Dm8GVCKDaNBJ+g==",
+  "dgSpecHash": "xo8jvuWA1iiTVM9g34RyD+r/vP4Bs1fQBtIIR7wgy6F3dupKki44Hdkk6hkXO/grZ0ovBHPiaD+Vw/XRpDoMag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\Train\\UniProject\\Common\\Common.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
