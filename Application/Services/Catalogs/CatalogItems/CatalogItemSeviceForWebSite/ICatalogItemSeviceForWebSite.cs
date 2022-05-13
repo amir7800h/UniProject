@@ -17,6 +17,7 @@ namespace Application.Catalogs.CatalogItems.CatalogItemSeviceForWebSite
         void SoldCatalogItem(List<SoldCatalogItemDto> soldCatalogItems);
         void AddToMyFavourite(int CatalogItemId, string UserId);
         PaginatedItemsDto<FavouriteCatalogItemDto> GetMyFavourite(string UserId, int page = 1, int pageSize = 20);
+        List<CatalogBrandDto> GetBrand();
     }
 
     public class CatalogItemSeviceForWebSite : ICatalogItemSeviceForWebSite
@@ -43,32 +44,46 @@ namespace Application.Catalogs.CatalogItems.CatalogItemSeviceForWebSite
             context.SaveChanges();
         }
 
+        public List<CatalogBrandDto> GetBrand()
+        {
+            var brands = context.CatalogBrands.OrderBy(p => p.Brand)
+                .Take(500).Select(p => new CatalogBrandDto
+                {
+                    Brand = p.Brand,
+                    Id = p.Id
+                }).ToList();
+
+            return brands;
+        }
+
         public PaginatedItemsDto<FavouriteCatalogItemDto> GetMyFavourite(string UserId, int page = 1, int pageSize = 20)
         {
 
-            //var result = context.CatalogItems
-            //    .Include(p=> p.CatalogItemFeatures)
-            //    .
+            var model = context.CatalogItems
+                .Include(p => p.CatalogItemFavourites)
+                .Include(p => p.CatalogItemImages)
+                .Include(p => p.Discounts)
+                .Where(p => p.CatalogItemFavourites.Any(f => f.UserId == UserId))
+                .OrderByDescending(p => p.Id)
+                .AsQueryable();
 
-            //int rowCount = 0;
-            //var data = result?.PagedResult(page, pageSize, out rowCount)
-            //    .ToList()
-            //    .Select(x => new FavouriteCatalogItemDto
-            //    {
-            //        Id = x.Id,
-            //        AvailableStock = x.CatalogItems.AvailableStock,
-            //        Name = x.CatalogItems.Name,
-            //        Price = x.Price,
-            //        Rate = 4,
-            //        Image = uriComposerService
-            //        .ComposeImageUri(x?.CatalogItemImages?.SingleOrDefault()?.Src ?? "")
-
-            //    }).ToList();
+            int rowCount = 0;
+            var data = model.PagedResult(page, pageSize, out rowCount)
+                .ToList()
+                .Select(x => new FavouriteCatalogItemDto
+                {
+                    Id = x.Id,
+                    AvailableStock = x.AvailableStock,
+                    Name = x.Name,
+                    Price = x.Price,
+                    Rate = 4,
+                    Image = uriComposerService
+                    .ComposeImageUri(x?.CatalogItemImages?.FirstOrDefault()?.Src ?? "")
+                   
+                }).ToList();
 
             return new PaginatedItemsDto<FavouriteCatalogItemDto>
-                (page, pageSize, null, data);
-
-
+                (page, pageSize, rowCount, data);
         }
 
         public void SoldCatalogItem(List<SoldCatalogItemDto> soldCatalogItems)
@@ -83,7 +98,11 @@ namespace Application.Catalogs.CatalogItems.CatalogItemSeviceForWebSite
         }
     }
 
-
+    public class CatalogBrandDto
+    {
+        public int Id { get; set; }
+        public string Brand { get; set; }
+    }
     public class SoldCatalogItemDto
     {
         public int Id { get; set; }

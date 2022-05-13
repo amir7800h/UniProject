@@ -34,7 +34,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("DiscountsId");
 
-                    b.ToTable("CatalogItemDiscount", (string)null);
+                    b.ToTable("CatalogItemDiscount");
                 });
 
             modelBuilder.Entity("CatalogTypeDiscount", b =>
@@ -49,7 +49,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("DiscountsId");
 
-                    b.ToTable("CatalogTypeDiscount", (string)null);
+                    b.ToTable("CatalogTypeDiscount");
                 });
 
             modelBuilder.Entity("Domain.Baskets.Basket", b =>
@@ -88,7 +88,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("AppliedDiscountId");
 
-                    b.ToTable("Baskets", (string)null);
+                    b.ToTable("Baskets");
                 });
 
             modelBuilder.Entity("Domain.Baskets.BasketItem", b =>
@@ -131,7 +131,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("CatalogItemId");
 
-                    b.ToTable("BasketItems", (string)null);
+                    b.ToTable("BasketItems");
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogBrand", b =>
@@ -212,9 +212,6 @@ namespace Persistence.Migrations
                     b.Property<int>("CatalogBrandId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("CatalogItemFavouriteId")
-                        .HasColumnType("int");
-
                     b.Property<int>("CatalogTypeId")
                         .HasColumnType("int");
 
@@ -255,15 +252,16 @@ namespace Persistence.Migrations
                     b.Property<DateTime?>("UpdateTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("VisitCount")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CatalogBrandId");
 
-                    b.HasIndex("CatalogItemFavouriteId");
-
                     b.HasIndex("CatalogTypeId");
 
-                    b.ToTable("CatalogItems", (string)null);
+                    b.ToTable("CatalogItems");
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogItemFavourite", b =>
@@ -273,6 +271,9 @@ namespace Persistence.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("CatalogItemId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("InsertTime")
                         .HasColumnType("datetime2");
@@ -294,7 +295,9 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CatalogItemFavourites", (string)null);
+                    b.HasIndex("CatalogItemId");
+
+                    b.ToTable("CatalogItemFavourites");
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogItemFeature", b =>
@@ -341,7 +344,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("CatalogItemId");
 
-                    b.ToTable("CatalogItemFeatures", (string)null);
+                    b.ToTable("CatalogItemFeatures");
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogItemImage", b =>
@@ -380,7 +383,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("CatalogItemId");
 
-                    b.ToTable("CatalogItemImages", (string)null);
+                    b.ToTable("CatalogItemImages");
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogType", b =>
@@ -510,7 +513,7 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Discounts", (string)null);
+                    b.ToTable("Discounts");
                 });
 
             modelBuilder.Entity("Domain.Discounts.DiscountUsageHistory", b =>
@@ -536,7 +539,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("DiscountUsageHistory", (string)null);
+                    b.ToTable("DiscountUsageHistory");
                 });
 
             modelBuilder.Entity("Domain.Orders.Order", b =>
@@ -579,7 +582,7 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Domain.Orders.OrderItem", b =>
@@ -626,9 +629,11 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CatalogItemId");
+
                     b.HasIndex("OrderId");
 
-                    b.ToTable("OrderItems", (string)null);
+                    b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("Domain.Payments.Payment", b =>
@@ -673,7 +678,7 @@ namespace Persistence.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("Payments", (string)null);
+                    b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("Domain.Users.UserAddress", b =>
@@ -724,7 +729,7 @@ namespace Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("UserAddresses", (string)null);
+                    b.ToTable("UserAddresses");
                 });
 
             modelBuilder.Entity("CatalogItemDiscount", b =>
@@ -791,10 +796,6 @@ namespace Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Catalogs.CatalogItemFavourite", null)
-                        .WithMany("CatalogItems")
-                        .HasForeignKey("CatalogItemFavouriteId");
-
                     b.HasOne("Domain.Catalogs.CatalogType", "CatalogType")
                         .WithMany()
                         .HasForeignKey("CatalogTypeId")
@@ -804,6 +805,15 @@ namespace Persistence.Migrations
                     b.Navigation("CatalogBrand");
 
                     b.Navigation("CatalogType");
+                });
+
+            modelBuilder.Entity("Domain.Catalogs.CatalogItemFavourite", b =>
+                {
+                    b.HasOne("Domain.Catalogs.CatalogItem", null)
+                        .WithMany("CatalogItemFavourites")
+                        .HasForeignKey("CatalogItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogItemFeature", b =>
@@ -858,7 +868,7 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Orders.Order", b =>
                 {
-                    b.OwnsOne("Domain.Orders.Order.Address#Domain.Orders.Address", "Address", b1 =>
+                    b.OwnsOne("Domain.Orders.Address", "Address", b1 =>
                         {
                             b1.Property<int>("OrderId")
                                 .HasColumnType("int");
@@ -885,7 +895,7 @@ namespace Persistence.Migrations
 
                             b1.HasKey("OrderId");
 
-                            b1.ToTable("Orders", (string)null);
+                            b1.ToTable("Orders");
 
                             b1.WithOwner()
                                 .HasForeignKey("OrderId");
@@ -897,6 +907,12 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Orders.OrderItem", b =>
                 {
+                    b.HasOne("Domain.Catalogs.CatalogItem", null)
+                        .WithMany("OrderItems")
+                        .HasForeignKey("CatalogItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Domain.Orders.Order", "Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
@@ -924,14 +940,13 @@ namespace Persistence.Migrations
 
             modelBuilder.Entity("Domain.Catalogs.CatalogItem", b =>
                 {
+                    b.Navigation("CatalogItemFavourites");
+
                     b.Navigation("CatalogItemFeatures");
 
                     b.Navigation("CatalogItemImages");
-                });
 
-            modelBuilder.Entity("Domain.Catalogs.CatalogItemFavourite", b =>
-                {
-                    b.Navigation("CatalogItems");
+                    b.Navigation("OrderItems");
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogType", b =>

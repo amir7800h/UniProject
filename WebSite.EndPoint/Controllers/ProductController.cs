@@ -14,9 +14,9 @@ namespace WebSite.EndPoint.Controllers
             this.getCatalogIItemPLPService = getCatalogIItemPLPService;
             this.getCatalogItemPDPService = getCatalogItemPDPService;
         }
-        public IActionResult Index(int page = 1, int pageSize = 20)
+        public IActionResult Index(CatlogPLPRequestDto catlogPLPRequestDto)
         {
-            var data = getCatalogIItemPLPService.Execute(page, pageSize);
+            var data = getCatalogIItemPLPService.Execute(catlogPLPRequestDto);
             return View(data);
         }
 

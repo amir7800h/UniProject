@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNuQG3dOxT+1CCg/fkSEKRKMFt4y+WWIOTDE7WA6cKjX4dC2kMSxFM7EuV+EJNfIO1Zc6vNH+NA3BPlTZVwQEg==",
+  "dgSpecHash": "QtoJMgBAd/tqU7r3Rojzl+YT/6AiWvr0mcxcRgkHyvPLXx46D0qzQRIHuYZyr6K4Ny0F7/+cs9xwzQOL6XqhCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UniProject\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",

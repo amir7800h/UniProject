@@ -8,69 +8,69 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Admin.EndPoint
 build_property.RootNamespace = Admin.EndPoint
-build_property.ProjectDir = C:\Users\Lenovo\Desktop\UiProject\Admin.EndPoint\
+build_property.ProjectDir = C:\Users\Lenovo\Desktop\UniProject\Admin.EndPoint\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\UiProject\Admin.EndPoint
+build_property.MSBuildProjectDirectory = C:\Users\Lenovo\Desktop\UniProject\Admin.EndPoint
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/CatalogItems/Create.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/CatalogItems/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ0l0ZW1zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/CatalogItems/Index.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/CatalogItems/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ0l0ZW1zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/CatalogType/Create.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/CatalogType/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1R5cGVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/CatalogType/Delete.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/CatalogType/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1R5cGVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/CatalogType/Edit.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/CatalogType/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1R5cGVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/CatalogType/Index.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/CatalogType/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1R5cGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Discounts/Create.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Discounts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzY291bnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Error.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Index.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Privacy.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Visitor/Index.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Visitor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzaXRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/_ViewImports.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/_ViewStart.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Lenovo/Desktop/UiProject/Admin.EndPoint/Pages/Shared/_Layout.cshtml]
+[C:/Users/Lenovo/Desktop/UniProject/Admin.EndPoint/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-yskt0qwhrg

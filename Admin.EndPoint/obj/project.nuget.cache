@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rjUYNjJqbu05kel68EQ0AiPKviui1YnNnzTjc8uDfA8dVifa9OyT/JPJcOV9jkRw4ofw2Mr9dvUIDuT37KHb8A==",
+  "dgSpecHash": "O/bkXpqEwyGHnpqQ9OBu5YYWWhuQyy1xnCD87RO54r58yfO04yAAJtcL0Rou1nSoH9uBiKxs7TsPTYnmQv1HBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Admin.EndPoint\\Admin.EndPoint.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo\\Desktop\\UniProject\\Admin.EndPoint\\Admin.EndPoint.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

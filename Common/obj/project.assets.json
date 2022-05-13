@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UniProject\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\Lenovo\\Desktop\\UniProject\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\Common\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo\\Desktop\\UniProject\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

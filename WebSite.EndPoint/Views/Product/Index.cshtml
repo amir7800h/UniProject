@@ -4,6 +4,34 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    //ذخیره سازی فیلتر های قبلی
+    string[] requestQuery = new string[] { "brandId", "CatalogTypeId", "sorttype", "AvailableStock" };
+    Dictionary<string, string> queries = new Dictionary<string, string>();
+    for (int i = 0; i < requestQuery.Length; i++)
+    {
+        @foreach (var querySring in Context.Request.Query.Where(p => p.Key == requestQuery[i]).ToList())
+        {
+            queries.Add(querySring.Key, querySring.Value);
+        }
+
+    }
+    string url = $"/product/index?";
+    string[] urls = new string[6];
+
+    @foreach  (var item in queries.Where(p => p.Key != "sorttype"))
+    {
+        url += $"{item.Key}={item.Value}&";
+    }
+
+
+    for  (int i  =  0; i < urls.Length; i++)
+    {
+        int num = i + 1;
+        urls[i] = url + "sorttype=" + num.ToString();
+    }
+
+
 }
 
 <div class="row mb-5" style="transform: none;">
@@ -16,89 +44,54 @@
                     <span>جستجوی پیشرفته <i class="fad fa-sliders-h"></i></span>
                     <button class="btn-close-filter-sidebar"><i class="fal fa-times"></i></button>
                 </div>
-            </div><div class="sidebar-widget">
-                <div class="widget widget-filter-options shadow-around">
-                    <div class="widget-title">برند</div>
-                    <div class="search-in-options form-element-row">
-                        <div class="form-element-with-icon">
-                            <input type="text" class="input-element" placeholder="جستجوی نام برند...">
-                            <i class="fad fa-file-search"></i>
+            </div>
+            <div class="sidebar-widget">
+
+                @await Component.InvokeAsync("BrandFilter")
+
+
+                <form asp-action="Index" method="get">
+
+                    <div class="widget shadow-around">
+                        <div class="widget-content">
+                            <div class="custom-control custom-switch">
+                                @{
+                                    var AvailableStock = Context.Request.Query["AvailableStock"];
+                                    if (AvailableStock == "true")
+                                    {
+                                        <input type="checkbox" name="AvailableStock"
+                                           onclick="submit()"
+                                           value="false"
+                                           checked
+                                           class="custom-control-input" id="customSwitch1">
+                                    }
+                                    else
+                                    {
+                                        <input type="checkbox" name="AvailableStock"
+                                           onclick="submit()"
+                                           value="true" class="custom-control-input" id="customSwitch1">
+                                    }
+                                }
+                                @foreach  (var item in queries)
+                                {
+                                    <input type="hidden" name="@item.Key" value="@item.Value" />
+                                }
+
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">
+                                    فقط کالاهای موجود در
+                                    انبار
+                                </label>
+
+                            </div>
                         </div>
                     </div>
-                    <div class="widget-content">
-                        <label class="container-checkbox">
-                            سامسونگ
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            شیائومی
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            هوآوی
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            اپل
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            نوکیا
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            آنر
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            ال جی
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            ایسوس
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            سونی
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            گوگل
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            سونی اریکسون
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="container-checkbox">
-                            جی ال ایکس
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="widget shadow-around">
-                    <div class="widget-content">
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                            <label class="custom-control-label" for="customSwitch1">
-                                فقط کالاهای موجود در
-                                انبار
-                            </label>
-                        </div>
-                    </div>
-                </div>
+
+
+
+
+                </form>
+
                 <div class="widget shadow-around">
                     <div class="widget-content">
                         <div class="custom-control custom-switch">
@@ -227,7 +220,8 @@
                 <div class="d-md-none">
                     <button class="btn-filter-product-submit">جستجوی پیشرفته</button>
                 </div>
-            </div><div class="resize-sensor" style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 347px; height: 1484px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div>
+            </div>
+            <div class="resize-sensor" style="position: absolute; inset: 0px; overflow: hidden; z-index: -1; visibility: hidden;"><div class="resize-sensor-expand" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 347px; height: 1484px;"></div></div><div class="resize-sensor-shrink" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: hidden; z-index: -1; visibility: hidden;"><div style="position: absolute; left: 0; top: 0; transition: 0s; width: 200%; height: 200%"></div></div></div>
         </div>
     </div>
     <div class="col-lg-9 col-md-8">
@@ -251,9 +245,34 @@
         </div>
         <div class="listing-items row">
 
+            <ul class="nav nav-pills col-md-12">
+                <li class="nav-item">
+                    <b class="nav-link " aria-current="page">مرتب‌سازی بر اساس :</b>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@urls[0]">  پربازدیدترین</a>                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@urls[1]">  پرفروش‌ترین</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@urls[2]"> محبوب‌ترین</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="@urls[3]"> ‌جدیدترین</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@urls[4]"> ارزان‌ترین</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@urls[5]"> گران‌ترین</a>
+                </li>
+
+            </ul>
+
+
             @foreach (var item in Model.Data)
             {
-               
                 <div class="col-lg-3 col-md-4 col-sm-6 px-0">
                     <div class="product-card">
                         <div class="product-card-top">
@@ -265,64 +284,60 @@
                                 <button class="add-to-compare"><i class="fas fa-random"></i></button>
                             </div>
                         </div>
-                        
-                            @if(item.AvailableStock  <= 0)
-                            {
-                                <div class="product-card-middle">
-                            <div class="ratings-container">
-                                <div class="ratings">
-                                    @{ int rate = item.Rate * 20; }
-                                    <div class="ratings-val" style="width: @rate%;"></div>
+                        @if (item.AvailableStock <= 0)
+                        {
+                            <div class="product-card-middle">
+                                <div class="ratings-container">
+                                    <div class="ratings">
+                                        @{                                            int rate = item.Rate * 20;                                        }
+                                        <div class="ratings-val" style="width: @rate%;"></div>
+                                    </div>
                                 </div>
+                                <h6 class="product-name">
+                                    <a href="#">
+                                        @item.Name
+                                    </a>
+                                </h6>
+                                <div class="product-price product-price-clone">ناموجود</div>
                             </div>
-                            <h6 class="product-name">
-                                <a href="#">
-                                     @item.Name
+                            <div class="product-card-bottom">
+                                <div class="product-price">
+                                    ناموجود
+                                </div>
+                                <a href="#" class="btn-add-to-cart">
+                                    <i class="fad fa-cart-plus "></i>
+                                    ناموجود
                                 </a>
-                            </h6>
-                        
-                            <div class="product-price product-price-clone">ناموجود</div>
-                        </div>
-                        <div class="product-card-bottom">
-                            <div class="product-price">
-                                ناموجود
-                            </div>
-                            <a href="#" class="btn-add-to-cart">
-                                <i class="fad fa-cart-plus "></i>
-                                ناموجود
-                            </a>
                             </div>
                         }
                         else
                         {
-                             <div class="product-card-middle">
-                            <div class="ratings-container">
-                                <div class="ratings">
-                                    @{ int rate = item.Rate * 20; }
-                                    <div class="ratings-val" style="width: @rate%;"></div>
+                            <div class="product-card-middle">
+                                <div class="ratings-container">
+                                    <div class="ratings">
+                                        @{                                            int rate = item.Rate * 20;                                        }
+                                        <div class="ratings-val" style="width: @rate%;"></div>
+                                    </div>
                                 </div>
+                                <h6 class="product-name">
+                                    <a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
+                                        @item.Name
+                                    </a>
+                                </h6>
+                                <div class="product-price product-price-clone">@item.Price.ToString("n0") تومان</div>
                             </div>
-                            <h6 class="product-name">
-                                <a href="#">
-                                     @item.Name
+                            <div class="product-card-bottom">
+                                <div class="product-price">
+                                    @item.Price.ToString("n0")  تومان
+                                </div>
+                                <a asp-controller="basket" asp-route-CatalogitemId="@item.Id" class="btn-add-to-cart">
+                                    <i class="fad fa-cart-plus"></i>
+                                    افزودن به سبد خرید
                                 </a>
-                            </h6>
-                        
-                            <div class="product-price product-price-clone">@item.Price.ToString("n0") تومان</div>
-                        </div>
-                        <div class="product-card-bottom">
-                            <div class="product-price">
-                                @item.Price.ToString("n0")  تومان
                             </div>
-                            <a href="#" class="btn-add-to-cart">
-                                <i class="fad fa-cart-plus"></i>
-                                افزودن به سبد خرید
-                            </a>
-                        </div>
 
                         }
 
-                       
                     </div>
                 </div>
             }

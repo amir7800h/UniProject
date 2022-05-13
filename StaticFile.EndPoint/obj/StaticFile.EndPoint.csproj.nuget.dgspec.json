@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\UiProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\UiProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UiProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj",
         "projectName": "StaticFile.EndPoint",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\StaticFile.EndPoint.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UiProject\\StaticFile.EndPoint\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\UniProject\\StaticFile.EndPoint\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
