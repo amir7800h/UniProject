@@ -21,6 +21,10 @@ namespace Application.Catalogs.CatalogItems.UriComposer
         }
         public string ComposeImageUri(string src)
         {
+            if(src == null)
+            {
+                return null;
+            }
             return Configuration["StaticFileDomain"] + src.Replace("\\", "//");
         }
     }

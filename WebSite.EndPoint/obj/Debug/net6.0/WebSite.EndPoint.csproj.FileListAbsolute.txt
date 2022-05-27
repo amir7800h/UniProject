@@ -921,3 +921,4 @@ C:\Users\Lenovo\Desktop\UiProject\WebSite.EndPoint\obj\Debug\net6.0\scopedcss\pr
 C:\Users\Lenovo\Desktop\UiProject\WebSite.EndPoint\obj\Debug\net6.0\WebSite.EndPoint.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\UiProject\WebSite.EndPoint\obj\Debug\net6.0\WebSite.EndPoint.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\UiProject\WebSite.EndPoint\obj\Debug\net6.0\ref\WebSite.EndPoint.dll
+C:\Users\Lenovo\Desktop\UniProject\WebSite.EndPoint\bin\Debug\net6.0\Microsoft.Extensions.Caching.SqlServer.dll

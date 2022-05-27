@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]  - فروشگاه باگتو </title>
+    <title>@ViewData["Title"]  - فروشگاه  </title>
     <!-- font-awesome -->
      <link rel="stylesheet" href="~/Theme/assets/css/font-awesome.min.css">
     <!-- Bootstrap 4.5.3 -->
@@ -42,7 +42,7 @@
                         </div>
                         <div class="top-header-menu">
                             <ul>
-                                <li><a href="#">خانه</a></li>
+                                <li><a asp-action="index" asp-controller="home">خانه</a></li>
                                 <li><a>پیگیری سفارش</a></li>
                                 <li><a asp-controller="product" asp-action="index" >فروشگاه</a></li>
                             </ul>
@@ -55,13 +55,15 @@
                     <div class="d-flex align-items-center">
                         <div class="site-logo">
                             <a href="#">
-                                <img src="~/Theme/assets/images/logo.png" alt="logo">
+                              @*  <img src="~/Theme/assets/images/logo.png" alt="logo">*@
                             </a>
                         </div>
                         <div class="search-box">
-                            <form action="#">
-                                <input type="text" placeholder="نام محصول یا برند را جستجو کنید...">
-                                <i class="far fa-search"></i>
+                            <form asp-controller="product" asp-action="index" method="get">
+                                <input name="searchkey" type="text"  placeholder="نام محصول یا برند را جستجو کنید...">
+                                <button onclick="submit()">
+                                    <i class="far fa-search" ></i>
+                                </button>                                
                             </form>
                             <div class="search-result">
                                 <ul class="search-result-list">
@@ -117,7 +119,7 @@
                                                 </span>
                                             </span>
                                         </span>
-                                        <span class="header-profile-dropdown-account">
+                                     @*   <span class="header-profile-dropdown-account">
                                             <span class="header-profile-dropdown-account-item">
                                                 <span class="header-profile-dropdown-account-item-title">اعتبار</span>
                                                 <span class="header-profile-dropdown-account-item-amount">
@@ -125,27 +127,40 @@
                                                     تومان
                                                 </span>
                                             </span>
-                                        </span>
+                                        </span>*@
                                     </a>
                                 </li>
-                                <li>
-                                    <a asp-action="login" asp-controller="account" class="dropdown--btn-primary">وارد شوید</a>
-                                </li>
-                                <li>
-                                    <span>کاربر جدید هستید؟</span>
-                                    <a href="#" class="border-bottom-dt">ثبت نام</a>
-                                </li>
-                                <hr>
-                                <li>
-                                    <a href="#">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li>
+                                    <a asp-area="customers" asp-action="index" asp-controller="customerhome">
                                         پروفایل
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a asp-area="customers" asp-controller="orders" asp-action="index">
                                         پیگیری سفارش
                                     </a>
+                                    </li>
+                                          <li>
+                                    <a asp-action="LogOut" asp-controller="Account">
+                                        خروج
+                                    </a>
+                                    </li>
+                                }
+                                else
+                                {
+                                       <li>
+                                    <a asp-action="login" asp-controller="account" class="dropdown--btn-primary">وارد شوید</a>
                                 </li>
+                                <li>
+                                    <span>کاربر جدید هستید؟</span>
+                                    <a asp-action="Register" asp-controller="account" class="border-bottom-dt">ثبت نام</a>
+                                </li>
+                                }
+                             
+                                @*<hr>*@
+                                
                             </ul>
                         </div>
                     </div>
@@ -255,7 +270,7 @@
                     <div class="side-navigation">
                         <div class="site-logo">
                             <a href="#">
-                                <img src="~/Theme/assets/images/logo.png" alt="logo">
+                              @*  <img src="~/Theme/assets/images/logo.png" alt="logo">*@
                             </a>
                         </div>
                         <div class="divider"></div>
@@ -476,7 +491,7 @@
                 </div>
                 <div class="site-logo">
                     <a href="#">
-                        <img src="~/Theme/assets/images/logo.png" alt="logo">
+                    @*    <img src="~/Theme/assets/images/logo.png" alt="logo">*@
                     </a>
                 </div>
                 <div class="header-tools">
@@ -488,10 +503,12 @@
             </div>
             <div class="header-bottom">
                 <div class="search-box">
-                    <form action="#">
-                        <input type="text" placeholder="نام محصول یا برند را جستجو کنید...">
-                        <i class="far fa-search"></i>
-                    </form>
+                    <form asp-controller="product" asp-action="index" method="get">
+                                <input name="searchkey" type="text"  placeholder="نام محصول یا برند را جستجو کنید...">
+                                <button onclick="submit()">
+                                    <i class="far fa-search" ></i>
+                                </button>                                
+                     </form>
                     <div class="search-result">
                         <ul class="search-result-list">
                             <li><a href="#">موبایل</a></li>
@@ -545,7 +562,7 @@
         <div class="page-loader">
             <div class="page-loader-content">
                 <div class="logo-area">
-                    <img src="~/Theme/assets/images/logo.png" alt="">
+                   @* <img src="~/Theme/assets/images/logo.png" alt="">*@
                 </div>
                 <span class="loader"></span>
             </div>
@@ -735,7 +752,7 @@
                     <div class="col-12 mb-3">
                         <div class="logo-area">
                             <a href="#">
-                                <img src="~/Theme/assets/images/logo.png" alt="">
+                               @* <img src="~/Theme/assets/images/logo.png" alt="">*@
                             </a>
                         </div>
                     </div>

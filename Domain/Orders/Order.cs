@@ -1,4 +1,5 @@
 ﻿using Domain.Attributes;
+using Domain.Catalogs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,13 +34,39 @@ namespace Domain.Orders
         {
 
         }
+
         /// <summary>
         /// پرداخت انجام شد
         /// </summary>
         public void PaymentDone()
         {
             PaymentStatus = PaymentStatus.Paid;
-        }        
+        }
+
+        /// <summary>
+        /// کالا تحویل داده شد
+        /// </summary>
+        /// <returns></returns>
+        public void OrderDelivered()
+        {
+            OrderStatus = OrderStatus.Delivered;
+        }
+
+        /// <summary>
+        /// ثبت مرجوعی کالا
+        /// </summary>
+        public void OrderReturned()
+        {
+            OrderStatus = OrderStatus.Returned;
+        }
+
+        /// <summary>
+        /// لغو سفارش
+        /// </summary>
+        public void OrderCancelled()
+        {
+            OrderStatus = OrderStatus.Cancelled;
+        }
 
         public int TotalPrice()
         {
@@ -59,6 +86,7 @@ namespace Domain.Orders
         public int Units { get; private set; }
         public Order Order { get; private set; }
         public int OrderId { get; private set; }
+        public CatalogItem CatalogItem { get; private set; }
         public OrderItem(int catalogItemId, string productName, string pictureUri, int unitPrice, int units)
         {
             CatalogItemId = catalogItemId;

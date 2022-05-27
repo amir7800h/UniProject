@@ -29,16 +29,16 @@ namespace WebSite.EndPoint.Models
             {
                 if(liMain == null)
                 {
-                    liMain = CreateLi(item.Name, "");
+                    liMain = CreateLi(item.Name, $"product/index?CatalogTypeId={item.Id}");
                 }
                 else
                 {
-                    liMain.InnerHtml.AppendHtml(CreateLi(item.Name, ""));
+                    liMain.InnerHtml.AppendHtml(CreateLi(item.Name, $"product/index?CatalogTypeId={item.Id}"));
                 }
 
                 var ul = new TagBuilder("ul");
                 ul.AddCssClass("row");
-                var liAll = CreateLi($"همه دسته بندی های {item.Name}", "");
+                var liAll = CreateLi($"همه دسته بندی های {item.Name}", $"product/index?CatalogTypeId={item.Id}");
                 liAll.AddCssClass("col-12");
                 ul.InnerHtml.AppendHtml(liAll);
 
@@ -57,7 +57,7 @@ namespace WebSite.EndPoint.Models
                     if(index < 13)
                     {
                         var a = new TagBuilder("a");
-                        a.MergeAttribute("href", $"#");
+                        a.MergeAttribute("href", $"product/index?CatalogTypeId={sub1.Id}");
                         a.InnerHtml.Append(sub1.Name);
                         liCol_1.InnerHtml.AppendHtml(a);
 
@@ -68,7 +68,7 @@ namespace WebSite.EndPoint.Models
                     {
 
                         var a = new TagBuilder("a");
-                        a.MergeAttribute("href", $"#");
+                        a.MergeAttribute("href", $"product/index?CatalogTypeId={sub1.Id}");
                         a.InnerHtml.Append(sub1.Name);
                         liCol_2.InnerHtml.AppendHtml(a);
 
@@ -80,7 +80,7 @@ namespace WebSite.EndPoint.Models
                     else if (index < 39)
                     {
                         var a = new TagBuilder("a");
-                        a.MergeAttribute("href", $"#");
+                        a.MergeAttribute("href", $"product/index?CatalogTypeId={sub1.Id}");
                         a.InnerHtml.Append(sub1.Name);
                         liCol_3.InnerHtml.AppendHtml(a);
 
@@ -92,7 +92,7 @@ namespace WebSite.EndPoint.Models
                     else
                     {
                         var a = new TagBuilder("a");
-                        a.MergeAttribute("href", $"#");
+                        a.MergeAttribute("href", $"product/index?CatalogTypeId={sub1.Id}");
                         a.InnerHtml.Append(sub1.Name);
                         liCol_4.InnerHtml.AppendHtml(a);
 
@@ -134,7 +134,7 @@ namespace WebSite.EndPoint.Models
             var ulsub2 = new TagBuilder("ul");
             foreach(var sub2 in data.Where(p=> p.ParentId == sub1.Id))
             {
-                ulsub2.InnerHtml.AppendHtml(CreateLi(sub2.Name, "#"));
+                ulsub2.InnerHtml.AppendHtml(CreateLi(sub2.Name, $"product/index?CatalogTypeId={sub2.Id}"));
                 indexCount++;
             }
             return ulsub2;

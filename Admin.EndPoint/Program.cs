@@ -6,6 +6,7 @@ using Application.Contexts.Interfaces;
 using Application.Discounts;
 using Application.Discounts.AddNewDiscountService;
 using Application.Interfaces.Contexts;
+using Application.Services.Banners;
 using Application.Visitors.GetVisitorReports;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -14,7 +15,7 @@ using Infrastructure.MappingProfile;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Contexts;
 using Persistence.Contexts.MongoContext;
-
+using Microsoft.Extensions.Caching.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,7 @@ builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 #endregion
 
 builder.Services.AddTransient<IImageUploadService, ImageUploadService>();
+builder.Services.AddTransient<IBannersService, BannersService>();
 
 builder.Services.AddTransient<ICatalogTypeService, CatalogTypeService>();
 builder.Services.AddTransient<ICatalogItemService, CatalogItemService>();
@@ -44,6 +46,12 @@ builder.Services.AddTransient<IDiscountHistoryService, DiscountHistoryService>()
 builder.Services.AddAutoMapper(typeof(CatalogMappingProfile));
 builder.Services.AddAutoMapper(typeof(CatalogVMMappingProfile));
 
+builder.Services.AddDistributedSqlServerCache(option =>
+{
+    option.ConnectionString = connectionString;
+    option.SchemaName = "dbo";
+    option.TableName = "CacheData";
+});
 
 
 

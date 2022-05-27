@@ -9,6 +9,8 @@ using Application.Discounts;
 using Application.Interfaces.Contexts;
 using Application.Orders;
 using Application.Payments;
+using Application.Services.HomePage;
+using Application.Services.Orders.CustomerOrdersServices;
 using Application.Users;
 using Application.Visitors.SaveVisitorInfo;
 using Application.Visitors.VisitorOnline;
@@ -20,8 +22,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Persistence.Contexts;
 using Persistence.Contexts.MongoContext;
 using WebSite.EndPoint.Hubs;
+using WebSite.EndPoint.Middlewares;
 using WebSite.EndPoint.Models.Utility.Filters;
 using WebSite.EndPoint.Utility.Middlewares;
+using Microsoft.Extensions.Caching.SqlServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +36,7 @@ string connectionString = builder.Configuration["ConnectionString:SqlServer"];
 builder.Services.AddDbContext<DataBaseContext>(options => options.UseSqlServer(connectionString));
 builder.Services.AddScoped<IDataBaseContext, DataBaseContext>();
 #endregion
+
 #region IdentityConfig
 builder.Services.AddIdentityService(builder.Configuration);
 builder.Services.AddAuthorization();
@@ -44,6 +49,7 @@ builder.Services.ConfigureApplicationCookie(option =>
 
 });
 #endregion
+
 builder.Services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 builder.Services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();
 builder.Services.AddScoped<SaveVisitorFilter>();
@@ -61,7 +67,16 @@ builder.Services.AddTransient<IPaymentService, PaymentService>();
 builder.Services.AddTransient<IDiscountHistoryService, DiscountHistoryService>();
 builder.Services.AddTransient<IDiscountService, DiscountService>();
 builder.Services.AddTransient<IIdentityDatabaseContext, IdentityDataBaseContext>();
+builder.Services.AddTransient<IHomePageService, HomePageService>();
+builder.Services.AddTransient<ICustomerOrdersService, CustomerOrdersService>();
 builder.Services.AddSignalR();
+
+builder.Services.AddDistributedSqlServerCache(option =>
+{
+    option.ConnectionString = connectionString;
+    option.SchemaName = "dbo";
+    option.TableName = "CacheData";
+});
 
 
 //mapper
@@ -77,6 +92,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseCustomExceptionHandler();
 app.UseSaveVisitorIdInCookie();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -93,10 +110,18 @@ app.UseEndpoints(endpoints =>
       name: "areas",
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
+
+    //endpoints.MapControllerRoute(
+    //name: "ProductDetails",
+    //pattern: "product/{id}/{slug}",
+    //defaults: new { controller = "Product", action = "Details" });
 });
 app.MapControllerRoute(
 name: "default",
 pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapHub<OnlineVisitorHub>("/chathub");
+
+
+
 
 app.Run();

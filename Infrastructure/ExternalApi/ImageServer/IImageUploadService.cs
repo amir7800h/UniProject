@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
@@ -15,9 +16,17 @@ namespace Infrastructure.ExternalApi
     }
     public class ImageUploadService : IImageUploadService
     {
-        public List<string> Upload(List<IFormFile> files)
+        private readonly IConfiguration configuration;
+
+        public ImageUploadService(IConfiguration configuration)
         {
-            var client = new RestClient("https://localhost:7281/api/Images?apikey=mysecretkey");
+            this.configuration = configuration;
+        }
+
+        public List<string> Upload(List<IFormFile> files)
+        {         
+            string UrlImageUpload = configuration["ImageUploadDomain"];
+            var client = new RestClient(UrlImageUpload);
             var request = new RestRequest();
             request.Method = Method.Post;
 

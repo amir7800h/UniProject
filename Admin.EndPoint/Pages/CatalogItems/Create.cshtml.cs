@@ -5,6 +5,7 @@ using Infrastructure.ExternalApi;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace Admin.EndPoint.Pages.CatalogItems
 {
@@ -13,14 +14,16 @@ namespace Admin.EndPoint.Pages.CatalogItems
         private readonly IAddNewCatalogItemService addNewCatalogItemService;
         private readonly ICatalogItemService catalogItemService;
         private readonly IImageUploadService imageUpload;
+        private readonly IDistributedCache distributedCache;
 
         public CreateModel(IAddNewCatalogItemService addNewCatalogItemService
             , ICatalogItemService catalogItemService, IImageUploadService imageUpload
-             )
+            , IDistributedCache distributedCache)
         {
             this.addNewCatalogItemService = addNewCatalogItemService;
             this.catalogItemService = catalogItemService;
             this.imageUpload = imageUpload;
+            this.distributedCache = distributedCache;
         }
 
         public SelectList Categories { get; set; }

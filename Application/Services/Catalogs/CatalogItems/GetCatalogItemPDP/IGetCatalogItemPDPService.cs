@@ -53,7 +53,7 @@ namespace Application.Catalogs.CatalogItems.GetCatalogItemPDP
                .Select(p => new SimilarCatalogItemDto
                {
                    Id = p.Id,
-                   Images = uriComposerService.ComposeImageUri(p.CatalogItemImages.FirstOrDefault().Src),
+                   Images = uriComposerService.ComposeImageUri(p.CatalogItemImages.FirstOrDefault().Src ?? ""),
                    Price = p.Price,
                    Name = p.Name
                }).ToList();

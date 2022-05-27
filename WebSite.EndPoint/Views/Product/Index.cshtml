@@ -6,7 +6,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 
     //ذخیره سازی فیلتر های قبلی
-    string[] requestQuery = new string[] { "brandId", "CatalogTypeId", "sorttype", "AvailableStock" };
+    string[] requestQuery = new string[] { "brandId", "CatalogTypeId", "sorttype", "AvailableStock", "searchkey" };
     Dictionary<string, string> queries = new Dictionary<string, string>();
     for (int i = 0; i < requestQuery.Length; i++)
     {
@@ -19,11 +19,10 @@
     string url = $"/product/index?";
     string[] urls = new string[6];
 
-    @foreach  (var item in queries.Where(p => p.Key != "sorttype"))
+    foreach  (var item in queries.Where(p => p.Key != "sorttype"))
     {
         url += $"{item.Key}={item.Value}&";
     }
-
 
     for  (int i  =  0; i < urls.Length; i++)
     {
@@ -276,7 +275,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 px-0">
                     <div class="product-card">
                         <div class="product-card-top">
-                            <a href="~/product/details?id=@item.Id" class="product-image">
+                            <a href="~/product/details?id=@item.Id&slug=@item.Slug" class="product-image">
                                 <img src="@item.Image" alt="@item.Name">
                             </a>
                             <div class="product-card-actions">
@@ -320,7 +319,7 @@
                                     </div>
                                 </div>
                                 <h6 class="product-name">
-                                    <a asp-action="Details" asp-controller="Product" asp-route-id="@item.Id">
+                                    <a href="~/product/details?id=@item.Id&slug=@item.Slug">
                                         @item.Name
                                     </a>
                                 </h6>
@@ -330,10 +329,14 @@
                                 <div class="product-price">
                                     @item.Price.ToString("n0")  تومان
                                 </div>
-                                <a asp-controller="basket" asp-route-CatalogitemId="@item.Id" class="btn-add-to-cart">
+                                <form asp-action="index" asp-controller="basket" method="post">
+                                    <input type="hidden" name="catalogitemid" value="@item.Id" />
+                                    <button href="" class="btn-add-to-cart" onclick="submit()">
                                     <i class="fad fa-cart-plus"></i>
                                     افزودن به سبد خرید
-                                </a>
+                                    </button>
+                                </form>
+                                
                             </div>
 
                         }
@@ -342,19 +345,38 @@
                 </div>
             }
 
+            
+            @*صفحه بندی*@
+            @{
+                       var prevDisabled = !Model.HasPreviosPage ? "disabled" : "";
+                       var nextDisabled = !Model.HasNextiosPage ? "disabled" : "";
+             }
 
             <div class="col-12 px-0">
                 <div class="pagination">
-                    <a href="#" class="prev"><i class="far fa-arrow-from-left"></i></a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#" class="current">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#" class="next"><i class="far fa-arrow-to-left"></i></a>
+                    <a class="prev @prevDisabled" asp-action="index" asp-route-pageIndex="@(Model.PageIndex - 1)">
+                        <i class="far fa-arrow-from-left"></i></a>
+
+                    @foreach(var item in Model.Pager.Pages)
+                    {
+                        if(item == Model.PageIndex)
+                        {
+                            <a class="current" asp-action="index" asp-route-pageIndex="@item">@item</a>
+                        }
+                        else
+                        {
+                            <a asp-action="index" asp-route-pageIndex="@item">@item</a>
+                        }
+                        
+                    }
+               
+                    <a class="next @nextDisabled" asp-action="index" asp-route-pageIndex="@(Model.PageIndex + 1)" >
+                        <i class="far fa-arrow-to-left"></i></a>
+
                 </div>
             </div>
+            @*پایان صفحه بندی*@
+
         </div>
     </div>
 </div>

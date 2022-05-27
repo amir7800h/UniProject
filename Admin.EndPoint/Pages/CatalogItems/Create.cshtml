@@ -24,12 +24,21 @@
                                 </fieldset>
                             </div>
 
+                             <div class="col-xl-4 col-lg-6 col-md-12 mb-1">
+                                <fieldset class="form-group">
+                                    <label for="basicInput">Slug</label>
+                                    <input  type="text"  class="form-control" id="Slug">
+                                    <span asp-validation-for="Data.Slug" class="text-danger"></span>
+                                </fieldset>
+                            </div>
+
                             <div class="col-xl-4 col-lg-6 col-md-12 mb-1">
                                 <fieldset class="form-group">
                                     <label for="basicInput"> برند </label>
                                     <select class="form-control" id="Brand" asp-items="@Model.Brands"></select>
                                 </fieldset>
                             </div>
+
 
                             <div class="col-xl-4 col-lg-6 col-md-12 mb-1">
                                 <fieldset class="form-group">
@@ -224,6 +233,7 @@
             var data = new FormData();
             //دریافت مقادیر از تکس باکس ها و....
             data.append("Name", $("#Name").val());
+            data.append("Slug", $("#Slug").val());
             data.append("AvailableStock", $("#AvailableStock").val());
             data.append("RestockThreshold", $("#RestockThreshold").val());
             data.append("MaxStockThreshold", $("#MaxStockThreshold").val());

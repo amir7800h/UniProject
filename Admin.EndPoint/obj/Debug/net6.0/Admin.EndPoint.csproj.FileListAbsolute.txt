@@ -300,3 +300,4 @@ C:\Users\Lenovo\Desktop\UiProject\Admin.EndPoint\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Lenovo\Desktop\UiProject\Admin.EndPoint\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Lenovo\Desktop\UniProject\Admin.EndPoint\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Lenovo\Desktop\UniProject\Admin.EndPoint\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Lenovo\Desktop\UniProject\Admin.EndPoint\bin\Debug\net6.0\Microsoft.Extensions.Caching.SqlServer.dll

@@ -126,7 +126,7 @@ namespace WebSite.EndPoint.Controllers
 
         public IActionResult AccessDenied()
         {
-            ViewData["Message"] = "Salam ....";
+            ViewData["Message"] = "اجازه دسترسی به این بخش را ندارید";
             return View();
         }
 

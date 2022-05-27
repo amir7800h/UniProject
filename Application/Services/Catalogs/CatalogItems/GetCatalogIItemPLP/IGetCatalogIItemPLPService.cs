@@ -28,16 +28,29 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
         {
             this.context = context;
             this.uriComposerService = uriComposerService;
- 
+
         }
         public PaginatedItemsDto<CatalogPLPDto> Execute(CatlogPLPRequestDto request)
         {
 
             var query = context.CatalogItems
-                .Include(p => p.Discounts)                
+                .Include(p => p.Discounts)
                 .Include(p => p.CatalogItemImages)
                 .OrderByDescending(p => p.Id)
                 .AsQueryable();
+
+            if (request.CatalogTypeId != null)
+            {
+                query = query
+                    .Include(p=> p.CatalogType)
+                    .Include(p=> p.CatalogType)
+                    .ThenInclude(p=> p.ParentCatalogType)
+                    .Include(p=> p.CatalogType)
+                    .ThenInclude(p=> p.ParentCatalogType)
+                    .Where(p => p.CatalogTypeId == request.CatalogTypeId || p.CatalogType.ParentCatalogType.Id == request.CatalogTypeId
+                 || p.CatalogType.ParentCatalogType.ParentCatalogType.Id == request.CatalogTypeId);
+            }
+      
 
             if (request.brandId != null)
                 query = query.Where(p => request.brandId.Any(b => b == p.CatalogBrandId));
@@ -76,7 +89,7 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
 
                 case SortType.Bestselling:
                     query = query.Include(p => p.OrderItems)
-                        .OrderByDescending(p=> p.OrderItems.Count());
+                        .OrderByDescending(p => p.OrderItems.Count());
                     break;
 
                 case SortType.MostPopular:
@@ -86,31 +99,32 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
             }
 
             int rowCount = 0;
-            var data= query.PagedResult(request.page, request.pageSize, out rowCount)
+            var data = query.PagedResult(request.pageIndex, request.pageSize, out rowCount)
                 .ToList()
                 .Select(p=> new CatalogPLPDto
                 {
                     Id = p.Id,
                     Name = p.Name,
+                    Slug = p.Slug,
                     Price = p.Price,
                     AvailableStock = p.AvailableStock,
                     Rate = 4,
                     Image = uriComposerService
-                    .ComposeImageUri(p?.CatalogItemImages?.FirstOrDefault()?.Src ?? ""),
+                   .ComposeImageUri(p?.CatalogItemImages?.FirstOrDefault()?.Src ?? ""),
                 }).ToList();
 
-            return new PaginatedItemsDto<CatalogPLPDto>(request.page, request.pageSize, rowCount, data);
+            return new PaginatedItemsDto<CatalogPLPDto>(request.pageIndex, request.pageSize, rowCount, data);
         }
     }
 
     public class CatlogPLPRequestDto
     {
-        public int page { get; set; } = 1;
+        public int pageIndex { get; set; } = 1;
         public int pageSize { get; set; } = 10;
         public int? CatalogTypeId { get; set; }
-        public int[] brandId { get; set; }
+        public int[]? brandId { get; set; }
         public bool AvailableStock { get; set; }
-        public string SearchKey { get; set; }
+        public string? SearchKey { get; set; }
         public SortType SortType { get; set; }
     }
 
@@ -150,6 +164,7 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string Slug { get; set; }
         public int Price { get; set; }
         public int AvailableStock { get; set; }
         public string Image { get; set; }

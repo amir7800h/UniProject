@@ -14,6 +14,7 @@ using Domain.Baskets;
 using Domain.Orders;
 using Domain.Payments;
 using Domain.Discounts;
+using Domain.Banners;
 
 namespace Persistence.Contexts
 {
@@ -29,6 +30,7 @@ namespace Persistence.Contexts
         public DbSet<CatalogItemFavourite> CatalogItemFavourites { get; set; }
 
         public DbSet<UserAddress> UserAddresses { get; set; }
+        public DbSet<Banner> Banners { get; set; }
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
@@ -53,8 +55,10 @@ namespace Persistence.Contexts
                 }
             }
 
+
             builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
             builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
+            builder.ApplyConfiguration(new CatalogItemEntityTypeConfiguration());
             builder.Entity<CatalogItem>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
             builder.Entity<Basket>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
             builder.Entity<BasketItem>().HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);

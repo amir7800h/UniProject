@@ -37,7 +37,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span> باگتو  کلاب</span>
+                                        <span>   کلاب</span>
                                         <span>0 <span class="text-info font-weight-bold">امتیاز</span></span>
                                     </a>
                                 </li>
@@ -46,13 +46,13 @@
                         <div class="user-menu">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a  asp-action="index" asp-controller="orders" asp-area="customers">
                                         <i class="far fa-clipboard-list-check"></i>
                                         سفارش های من
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a asp-action="index" asp-controller="MyFavourite" asp-area="customers">
                                         <i class="far fa-heart"></i>
                                         لیست علاقمندی
                                     </a>
@@ -64,7 +64,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="active">
+                                    <a  asp-action="index" asp-controller="address" asp-area="customers">
                                         <i class="far fa-map-marked"></i>
                                         نشانی ها
                                     </a>
@@ -88,7 +88,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a asp-action="LogOut" asp-controller="Account">
                                         <i class="far fa-sign-in-alt"></i>
                                         خروج
                                     </a>

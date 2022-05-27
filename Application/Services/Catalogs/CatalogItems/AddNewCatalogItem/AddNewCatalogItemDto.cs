@@ -7,6 +7,7 @@ namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
     {
         public string Name { get; set; }
         public string Description { get; set; }
+        public string Slug { get; set; }
         public int Price { get; set; }
         public int CatalogTypeId { get; set; }
         public int CatalogBrandId { get; set; }
@@ -17,19 +18,19 @@ namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
         public List<AddNewCatalogItemImage_Dto> Images { get; set; }
     }
 
-    public class AddNewCatalogItemDtoValidator : AbstractValidator<AddNewCatalogItemDto>
-    {
-        public AddNewCatalogItemDtoValidator()
-        {
-            RuleFor(x => x.Name).NotNull().WithMessage("نام محصول را وارد نمایید");
-            RuleFor(x => x.Name).Length(2, 100);
-            RuleFor(x => x.Price).InclusiveBetween(0, int.MaxValue);
-            RuleFor(x => x.Description).NotNull().WithMessage("توضیحات نمی تواند خالی باشد");
-            RuleFor(x => x.Price).NotNull();
-            RuleFor(x => x.AvailableStock).InclusiveBetween(0, int.MaxValue);
-            RuleFor(x => x.Images).Null();
-            RuleFor(x => x.Description).Null();
+    //public class AddNewCatalogItemDtoValidator : AbstractValidator<AddNewCatalogItemDto>
+    //{
+    //    public AddNewCatalogItemDtoValidator()
+    //    {
+    //        RuleFor(x => x.Name).NotNull().WithMessage("نام محصول را وارد نمایید");
+    //        RuleFor(x => x.Name).Length(2, 100);
+    //        RuleFor(x => x.Price).InclusiveBetween(0, int.MaxValue);
+    //        RuleFor(x => x.Description).NotNull().WithMessage("توضیحات نمی تواند خالی باشد");
+    //        RuleFor(x => x.Price).NotNull();
+    //        RuleFor(x => x.AvailableStock).InclusiveBetween(0, int.MaxValue);
+    //        RuleFor(x => x.Images).Null();
+    //        RuleFor(x => x.Description).Null();
             
-        }
-    }
+    //    }
+    //}
 }

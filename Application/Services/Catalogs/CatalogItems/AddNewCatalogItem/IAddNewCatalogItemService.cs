@@ -26,13 +26,32 @@ namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
             this.mapper = mapper;
         }
         public BaseDto<int> Execute(AddNewCatalogItemDto request)
-        {
+        {            
             var catalogItem = mapper.Map<CatalogItem>(request);
+
+            if (request.Slug != null)
+                catalogItem.Slug = request.Slug.Replace(' ', '-');
+
             context.CatalogItems.Add(catalogItem);
             context.SaveChanges();
+
             return new BaseDto<int>
                 (true, new List<string> { "محصول با موفقیت ثبت شد" }, catalogItem.Id);
         }
+
+
+        //private string SlugFormat(string Slug)
+        //{
+        //    حذف فاصله‌ی یک رشته
+        //    string[] words = Slug.Split(' ');
+        //    string result = "";
+        //    for (int i = 0; i < words.Length; i++)
+        //    {
+        //        result += words[i].Trim();
+        //    }
+
+        //    return result;
+        //}
     }
 
     public class AddNewCatalogItemImage_Dto
